@@ -1,0 +1,27 @@
+
+#ignore thumbnails created by windows
+Thumbs.db
+
+*.log
+*.bak
+*.watch
+*.zip
+*.*_c
+*.log*
+*.drvlog
+*.dyn*
+*.*_
+
+*HisLog.mdb
+*.HisLogEx
+
+*Copia*.*
+*orig
+
+LOGS/*
+IMAGES/*
+DLOGGERS/*
+ALARM/*.alr
+DATA/*.var
+
+

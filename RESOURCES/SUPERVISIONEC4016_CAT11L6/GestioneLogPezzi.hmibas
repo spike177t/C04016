@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<MovResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ScriptCode StartSel="1880" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Option Explicit
+
+Dim adesso As Date
+Dim prima As Date
+
+Dim dAdesso, T As Double
+Dim dPrima As Double
+
+Dim sAdesso As String
+Dim sPrima As String
+
+Dim adesso_integral As Long
+Dim adesso_fraction As Double
+
+Dim ore, min, sec,secf As Double
+
+
+Sub Main()
+
+	adesso 	= Now()
+
+	sAdesso = CStr(adesso)
+	dAdesso = CDbl(adesso)
+
+	dPrima 	= dAdesso - 2
+	prima 	= CDate(dPrima)
+	sPrima 	= CStr(prima)
+
+	Debug.Print ("adesso: " &amp; CStr(adesso))
+	Debug.Print ("prima: "  &amp; CStr(prima))
+
+	'The integral part of a Date represents the day. The value zero is equal to #12/30/1899#. This is the Epoch. The value 1 is equal to one day, or 24 hours. A week equals 7 and a year is either 365 or 366. Sample dates: #1/1/1900# = 2, #1/1/2000# = 36526, #1/1/2100# = 73051.
+
+	'The Time of Day Is In the decimal fraction. An Hour Is equal To 1/24, a Minute Is 1/1440 And a Second Is 1/86400. Noon Is 0.5. Noon On #1/1/1900# equals 2.5 And so On. The maximum precision In VB6 Time functions Is 1 Second, whose numeric value Is 0.0000115740740740741. You can even store fractions of a Second, but VB6 has no functionality For the fractions.
+
+	'Get Date without Time: Fix(T)
+	'Get Time without Date: Abs(T-Fix(T))
+	'Get Time difference In days: DateDiff("s", T1, T2)/86400
+	T = dAdesso
+	adesso_integral = Fix(T)
+	adesso_fraction = Abs(T-Fix(T))
+
+	ore 	= Fix(adesso_fraction * 24)
+	min 	= Fix((adesso_fraction - (ore/24)) * 1440)
+	secf 	= Fix((adesso_fraction - (ore/24) - (min/1440)) * 86400)
+	sec   = Round((adesso_fraction - (ore/24) - (min/1440)) * 86400)
+
+	Debug.Print ("ore: " &amp; CStr(ore))
+	Debug.Print ("min: " &amp; CStr(min))
+	Debug.Print ("secf: " &amp; CStr(secf))
+	Debug.Print ("sec: " &amp; CStr(sec))
+
+	Do
+
+		adesso 	= Now()
+		sAdesso = CStr(adesso)
+		dAdesso = CDbl(adesso)
+
+		dPrima 	= dAdesso - 2
+		prima 	= CDate(dPrima)
+		sPrima 	= CStr(prima)
+
+
+		PLC_11L6_DB90_Real_Ora_IN = CSng (dAdesso)
+		PLC_11L6_DB90_String_Ora_IN = sAdesso
+
+
+		'PLC_11L6_DB118_Real_Prel_Tornio = dAdesso
+		'PLC_11L6_DB118_String_Prel_Tornio = sAdesso
+
+		'PLC_11L6_DB118_Real_Depo_Tornio = dPrima
+
+		'PLC_11L6_DB118_String_Depo_Tornio = sPrima
+
+
+
+
+		DoEvents
+	Loop Until IsInStoppingMode
+
+
+	
+End Sub
+</ScriptCode>
+<Mode RunAtServer="1" UseUIInterface="0" SeparateThread="0" UseItsTrace="0" ModalDialogs="0"/>
+<Execution ThreadPriority="0" StatusVariable="" MaxInstances="1" SleepExecution="0" SyncroScriptTimeout="5000"/>
+</MovResource>

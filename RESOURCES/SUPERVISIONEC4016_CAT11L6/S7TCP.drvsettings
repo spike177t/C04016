@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DriverSettings>
+<GeneralSettings WaitTime="0" TimeOut="2000" SynchroStart="false" MinimumJobThreshold="5" DefRefreshTimeNotInUse="10000" EnableCOMInterface="false" PollingTime="0" PollingTimeNotInUse="10000" PriorityProtocolThread="0" BaseClassBuild="261" DriverVersion="184615181" AggregationLimit="0" DirectWriteIO="false" SetInUseStructureFields="false" SuspendTasksInError="true" szWinCEProtocolPriority="-1" MaxTransactionSize="0" InUseOffsetTime="50" ExpandGroup1="0"/>
+<Debug DebugWindow="false" MaxLogEntries="10000" LogFileName="" EnableLogFile="false" EnablePerformances="false" ExpandGroup2="0"/>
+<S7TCPDriverSettings RemoteDeviceID="1" RemoteRack="0" RemoteSlot="0" ExpandS7Group1="1"/>
+<JobList/>
+<StationList>
+<Station>
+<Name MaxRetries="1" StateVariable="" ExpandGroup1="1" GenericRxTimeout="5000" GenericTxTimeout="5000">PLC_11L6</Name>
+<Server ServerAddress="10.1.7.151" ServerPort="102" BackupServerAddress="" SwitchServerTimeout="10000" LocalBoundAddress="" LocalBoundPort="0" UsePing="false" ExpandTcpGroup1="1"/>
+<Queue MaxReceive="1024" MaxSend="1024" ExpandTcpGroup2="0"/>
+<Timeouts RxTimeout="5000" TxTimeout="5000" ExpandTcpGroup3="0"/>
+<RASSettings PhoneBookEntry="" PhoneNumber="" UserName=" " Password=" " Retries="3" DisconnectAfterSecs="10" EnableRASCallOnThisStation="false" PromptForConnection="false" RetryAfterSecs="30" DialOnlyOnCommand="false" ExpandRasGroup1="0"/>
+<DeviceStationSettings S7_200="0" RemoteDeviceID="2" RemoteRack="0" RemoteSlot="2" BackupDeviceID="2" BackupRack="0" BackupSlot="2" ExpandS7Group1="1"/>
+</Station>
+</StationList>
+</DriverSettings>

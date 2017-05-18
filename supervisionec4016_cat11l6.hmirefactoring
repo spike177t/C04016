@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Refactoring>
+<ListRefactor>
+<ChildRefactor>
+<type ImageId="33" Category="Phone Number - PLC_11L6" Var="" ResourceName="S7 TCP" Index="0" Missing="0" ShortResourceName="S7 TCP" Reason="4294967295">RefactorGenericResourceVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="Allarmi - btnManuOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" ResourceName="popup_automan" Index="3" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="Allarmi - btnAutoOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" ResourceName="popup_automan" Index="6" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="Allarmi - Pulsante264" Category="Comando su Rilascio" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" ResourceName="confermaexit" Index="16" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_BMANUON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_IncongrEstrattori" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_Q_LMPAUXON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="alm_Presenti" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_btn_Allarmi_soglia" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainRosso" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainGiallo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainVerde" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActDateString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActTimeString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="PlcT6_DB201_StatoBoxPos01_CodePrg" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_AuxOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip1Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip2Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip3Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip4Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_FtcExtPltRipr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Allarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Allarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="Impostazioni - btnManuOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" ResourceName="popup_automan" Index="3" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="Impostazioni - btnAutoOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" ResourceName="popup_automan" Index="6" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="Impostazioni - Pulsante264" Category="Comando su Rilascio" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" ResourceName="confermaexit" Index="16" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_BMANUON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_IncongrEstrattori" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_Q_LMPAUXON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="alm_Presenti" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_btn_Allarmi_soglia" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainRosso" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainGiallo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainVerde" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActDateString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActTimeString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="PlcT6_DB201_StatoBoxPos01_CodePrg" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_AuxOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip1Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip2Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip3Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip4Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_FtcExtPltRipr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB30_Sbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="88" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB30_Sbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="88" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Testo Dinamico e Colore Bordo" Var="PlcR13_DB30_Sbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="88" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB30_Sbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="89" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB30_Sbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="90" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB30_Sbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="90" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB32_Carico_Scarico_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="93" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB32_Carico_Scarico_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="93" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Testo Dinamico e Colore Bordo" Var="PlcR13_DB32_Carico_Scarico_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="93" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB32_Carico_Scarico_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="94" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB32_Carico_Scarico_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="95" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB32_Carico_Scarico_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="95" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB30_Sbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="96" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB32_Carico_Scarico_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="97" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB31_Trasporto_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="100" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB31_Trasporto_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="100" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Testo Dinamico e Colore Bordo" Var="PlcR13_DB31_Trasporto_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="100" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB31_Trasporto_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="101" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB31_Trasporto_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="102" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB31_Trasporto_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="102" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB31_Trasporto_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="103" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB90_TouchUpSelector" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="104" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB90_TouchUpSelector" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="104" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB30_Sbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="105" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Var. Abilitazione" Var="PlcR13_DB1_Output_ManualCycle" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="105" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB30_Sbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="105" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB32_Carico_Scarico_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="106" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Var. Abilitazione" Var="PlcR13_DB1_Output_ManualCycle" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="106" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB32_Carico_Scarico_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="106" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB31_Trasporto_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="107" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Var. Abilitazione" Var="PlcR13_DB1_Output_ManualCycle" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="107" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB31_Trasporto_Alberi" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Impostazioni.hmiscr" Index="107" Missing="0" OutOfScreenPosition="0" ShortScreenName="Impostazioni" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="LogProduzione - btnManuOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" ResourceName="popup_automan" Index="3" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="LogProduzione - btnAutoOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" ResourceName="popup_automan" Index="6" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="LogProduzione - Pulsante264" Category="Comando su Rilascio" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" ResourceName="confermaexit" Index="16" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_BMANUON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_IncongrEstrattori" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_Q_LMPAUXON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="alm_Presenti" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_btn_Allarmi_soglia" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\LogProduzione.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="LogProduzione" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="Main - btnManuOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" ResourceName="popup_automan" Index="4" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="Main - btnAutoOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" ResourceName="popup_automan" Index="7" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="Main - Pulsante264" Category="Comando su Rilascio" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" ResourceName="confermaexit" Index="17" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_BMANUON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_IncongrEstrattori" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_Q_LMPAUXON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="alm_Presenti" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="2" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="23" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="23" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="23" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="23" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="23" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="23" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="23" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_btn_Allarmi_soglia" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="23" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="23" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainRosso" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainGiallo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainVerde" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActDateString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActTimeString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="PlcT6_DB201_StatoBoxPos01_CodePrg" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_AuxOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip1Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip2Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip3Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip4Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_FtcExtPltRipr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\Main.hmiscr" Index="65" Missing="0" OutOfScreenPosition="0" ShortScreenName="Main" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="RicetteModificaCrea - btnManuOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" ResourceName="popup_automan" Index="3" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="RicetteModificaCrea - btnAutoOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" ResourceName="popup_automan" Index="6" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="RicetteModificaCrea - Pulsante264" Category="Comando su Rilascio" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" ResourceName="confermaexit" Index="16" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_BMANUON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_IncongrEstrattori" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_Q_LMPAUXON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="alm_Presenti" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_btn_Allarmi_soglia" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainRosso" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainGiallo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainVerde" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActDateString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActTimeString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="PlcT6_DB201_StatoBoxPos01_CodePrg" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_AuxOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip1Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip2Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip3Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip4Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_FtcExtPltRipr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="RicettaControlVar" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="88" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="117" Category="Combo Box" szAction="Variabile Display" Var="RicettaAttivaTemp:Codice" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="90" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="117" Category="Combo Box" szAction="Variabile Display" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="90" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="117" Category="Combo Box" szAction="Lista List Box" Var="RicettaControlVar" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="90" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="RicettaControlVar" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="90" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaControlVar" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="92" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="93" Category="Pulsante di Opzione" szAction="Pulsante di selezione" Var="RicettaControlVar" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="93" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp:AltezzaPezzo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="98" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="98" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp:TipoPallet" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="99" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="99" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp:LunghezzaPezzo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="100" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="100" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp:NumPezziVie" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="101" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="101" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp:Codice" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="102" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="102" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp:NumPiani" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="106" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="106" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="107" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="108" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="109" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="110" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="111" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="112" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Codice Script" Var="RicettaAttivaTemp:Codice" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="114" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Codice Script" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="114" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Codice Script - RicettaAttivaTemp:Codice" Var="RicettaAttivaTemp:Codice" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="114" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Codice Script - RicettaAttivaTemp:Codice" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="114" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Codice Script" Var="RicettaAttivaTemp:Codice" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="115" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Codice Script" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="115" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Var. Abilitazione" Var="PlcR13_DB90_Ok_Rx_New_Ricetta" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="115" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Codice Script - RicettaAttivaTemp:Codice" Var="RicettaAttivaTemp:Codice" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="115" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Codice Script - RicettaAttivaTemp:Codice" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="115" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="116" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp:CodiceProgramma" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="118" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="118" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp:PesoPezzo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="120" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="120" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="97" Category="Display" szAction="Variabile Display" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="121" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="RicettaAttivaTemp:AbilitaSbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="122" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="122" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="RicettaAttivaTemp:AbilitaSbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="122" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="122" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Testo Dinamico e Colore Bordo" Var="RicettaAttivaTemp:AbilitaSbavatura" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="122" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Testo Dinamico e Colore Bordo" Var="RicettaAttivaTemp" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="122" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Pulsante di selezione" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="123" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="123" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Testo Dinamico e Colore Bordo" Var="PlcR13_DB100_ProgAttivo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\RicetteModificaCrea.hmiscr" Index="123" Missing="0" OutOfScreenPosition="0" ShortScreenName="RicetteModificaCrea" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="StoricoAllarmi - btnManuOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" ResourceName="popup_automan" Index="3" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="StoricoAllarmi - btnAutoOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" ResourceName="popup_automan" Index="6" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="StoricoAllarmi - Pulsante264" Category="Comando su Rilascio" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" ResourceName="confermaexit" Index="16" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_BMANUON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_IncongrEstrattori" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_Q_LMPAUXON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="alm_Presenti" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_btn_Allarmi_soglia" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainRosso" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainGiallo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainVerde" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActDateString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActTimeString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="PlcT6_DB201_StatoBoxPos01_CodePrg" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_AuxOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip1Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip2Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip3Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip4Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_FtcExtPltRipr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoAllarmi.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoAllarmi" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="StoricoSistema - btnManuOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" ResourceName="popup_automan" Index="3" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="StoricoSistema - btnAutoOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" ResourceName="popup_automan" Index="6" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="StoricoSistema - Pulsante264" Category="Comando su Rilascio" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" ResourceName="confermaexit" Index="16" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_BMANUON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_IncongrEstrattori" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_Q_LMPAUXON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="alm_Presenti" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_btn_Allarmi_soglia" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainRosso" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainGiallo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainVerde" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActDateString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActTimeString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="PlcT6_DB201_StatoBoxPos01_CodePrg" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_AuxOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip1Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip2Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip3Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip4Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_FtcExtPltRipr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\StoricoSistema.hmiscr" Index="64" Missing="0" OutOfScreenPosition="0" ShortScreenName="StoricoSistema" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="-1" Category="Sinottico Incastrato" szAction="Sinottico Incastrato" Var="mov_Tv_SinotticoIncastrato" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Category="Pulsante" szAction="Colore di Sfondo" Var="mov_NomeAreaManutenzione" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="12" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_AndonBluDaQ1" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="13" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_AndonRossoDaQ1" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="13" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_AndonGialloDaQ1" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="13" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_AndonVerdeDaQ1" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="13" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_LmpTorrBluDaQ1" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="24" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_LmpTorrRossaDaQ1" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="24" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_LmpTorrBiancaDaQ1" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="24" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_LmpTorrVerdeDaQ1" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="24" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_LmpTorrBluDaQ2" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="35" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_LmpTorrRossaDaQ2" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="35" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_LmpTorrBiancaDaQ2" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="35" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB50_LmpTorrVerdeDaQ2" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="35" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB0_TorrMacAuto" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="46" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB0_TorrMacAllarme" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="46" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB0_TorrMacOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="46" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Q3_DB0_TorrMacInCiclo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="46" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcAust_TORRETTA_ROSSA" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="57" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcAust_TORRETTA_BIANCA" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="57" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcAust_TORRETTA_VERDE" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="57" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcDist_TORRETTA_ROSSA" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="66" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcDist_TORRETTA_BIANCA" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="66" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcDist_TORRETTA_VERDE" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\TV_Container.hmiscr" Index="66" Missing="0" OutOfScreenPosition="0" ShortScreenName="TV_Container" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - btnManuOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="popup_automan" Index="3" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - btnAutoOn" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="popup_automan" Index="6" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante264" Category="Comando su Rilascio" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="confermaexit" Index="16" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_BMANUON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_IncongrEstrattori" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_Q_LMPAUXON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="Plc_bAutoOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="Plc_ALMON" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="Plc_BHMITSTRSTALM" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="alm_Presenti" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Rilascio 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="alm_ResetAll" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="1" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante89" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini_rike1" Index="23" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante86" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini" Index="24" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante86" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini_contenutomag1" Index="25" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante87" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini_contenutomag2" Index="26" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante88" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini_cassettidisponibili" Index="27" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante89" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini_rike2" Index="28" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante90" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini_quartine" Index="29" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante86" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini_cassettipieni" Index="30" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante87" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini_cassettiinriempimento" Index="31" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="90" Name="_SimboliPubblici - Pulsante91" Category="Comando su Premuto" Var="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" ResourceName="magazzini_eliminapezzo" Index="32" Missing="0" ShortResourceName="Pulsante">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Var. Abilitazione" Var="_SysVar_:ActivePassLevel" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Var. Abilitazione" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="_SysVar_:ActivePassLevel" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 2" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 2" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Comando su Premuto 1" Var="loc_BtnBarMagazzini_SogliaColore" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="22" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="33" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="33" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="33" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="33" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="33" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="33" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="33" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_btn_Allarmi_soglia" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="33" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="loc_SelPage" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="33" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainRosso" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainGiallo" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Visibile" Var="PlcR13_DB90_ColLumPagMainVerde" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActDateString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_:ActTimeString" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="_SysVar_" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Variabile Display" Var="PlcT6_DB201_StatoBoxPos01_CodePrg" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_AuxOn" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip1Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip2Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip3Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_Rip4Ripr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="79" Category="Simbolo" szAction="Colore di Sfondo" Var="PlcR13_DB500_FtcExtPltRipr" ScreenName="C:\SUPERVISIONEC4016_CAT11L6\HMI\RESOURCES\SUPERVISIONEC4016_CAT11L6\_SimboliPubblici.hmiscr" Index="75" Missing="0" OutOfScreenPosition="0" ShortScreenName="_SimboliPubblici" Reason="4294967295">RefactorScreenVar</type>
+</ChildRefactor>
+<ChildRefactor>
+<type ImageId="1" Name="supervisionec4016_cat11l6" Category="Sinottico di Avvio" Var="Progetto" ResourceName="c:\supervisionec4016_cat11l6\hmi\resources\supervisionec4016_cat11l6\main.hmiscr" Index="0" Missing="0" ShortResourceName="Progetto">RefactorGenericResourceScreen</type>
+</ChildRefactor>
+</ListRefactor>
+</Refactoring>

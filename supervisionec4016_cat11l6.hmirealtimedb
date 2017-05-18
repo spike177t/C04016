@@ -1,0 +1,2898 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<RealTimeDB>
+<AreaData NumInput="32768" NumOutput="32768" NumFlag="32768" UseSharedMemory="0" EnableInUseVarMng="1" EnableTimeStampNotifying="0" UseSharedDynTag="0" UseInputImage="0" UseOutputImage="0" PurgeDynTagTimer="20000" RetWriteDelay="5"/>
+<EnableRetFlags RetFlagFrom="0" RetFlagTo="16384">1</EnableRetFlags>
+<EnableRetInput RetInputFrom="0" RetInputTo="16384">1</EnableRetInput>
+<EnableRetOutput RetOutputFrom="0" RetOutputTo="16384">1</EnableRetOutput>
+<EnableOPCServer SINGLE_PATH_SEPARATOR="\" DOUBLE_PATH_SEPARATOR="\\" OPX_PATH_SEPARATOR="~"/>
+<szTraceDBSettings RecycleDBConnection="1" MaxError="3" MaxNumberTrans="10" Dsn="" User="" TimeCol="" MSecCol="" LocalTimeCol="" UserCol="" ChangerCol="" ValueBeforeCol="" ValueAfterCol="" ValueCol="" QualityCol="" TimeStampCol="" VarNameCol="" VarGroupNameCol="" VarDescriptionCol="" MaxCacheBeforeFlush="32767" DefVarCharPrecision="255" UseInMemoryDB="0" IMDBSharedTable="1" IMDBSaveColumnName="1" IMDBExportXMLTable="0" IMDBExportCSVTable="1" IMDBCryptFile="0" SecWriteBehindDelay="10" MaxRecordsNumber="10000" cIMDBDelimiter="" cIMDBEndOfLine=""/>
+<RealTimeODBCSettings RecycleDBConnection="1" MaxError="3" MaxNumberTrans="10" Dsn="" User="" DefVarCharPrecision="255" TableName="" NameCol="" ValueCol="" MinValueCol="" MaxValueCol="" AveValueCol="" TotalTimeCol="" LastTimeOnCol=""/>
+<VariableList>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2228|Typ=7">PLC_11L6_DB118_Real_DepoLava_1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB978:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_3</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="4" AreaType="1" Address="0" Bit="0" Shared="0" Retentive="0">loc_SelPage</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2112|Typ=7">PLC_11L6_DB118_Real_PrelLava_4</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB166:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_6</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1706:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_29</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2098.1|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_20</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW14|Typ=3">PLC_11L6_DB116_Par_RBT1_DepoMarposs</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1398:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_18</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB782:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_28</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="11" StructType="UDT 100" AreaType="1" Address="0" Bit="524" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB100.DBD0|Typ=11">PLC_11L6_DB100_ProgAttivo</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB474:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_17</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="Allarmi" Shared="0" Retentive="0">alm_Presenti</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="5" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBD88|Typ=5">PLC_11L6_DB116_Tot_ElementiLavatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1874:25|DL=27|Typ=9">PLC_11L6_DB118_String_Prel_Tornio</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Icona stato allarme pagina Main grave (interruzione marcia) " Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX0.6|Typ=0">PLC_11L6_DB90_StatoPagMainAllGrave</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Description="Conteggio Ore Lavoro Ciclo Robot 1 Turno 1" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW204|Typ=3">PLC_11L6_DB116_CounterOreLavoroRbt1_T1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2232|Typ=7">PLC_11L6_DB118_Real_DepoLava_2</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1006:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_4</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2116|Typ=7">PLC_11L6_DB118_Real_PrelLava_5</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW16|Typ=3">PLC_11L6_DB116_Par_RBT1_PrelLappatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB194:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_7</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2098.2|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_21</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1426:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_19</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2096.7|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_10</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB810:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_29</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW8|Typ=3">PLC_11L6_DB116_Par_RBT1_PrelTornio</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW12|Typ=3">PLC_11L6_DB116_Par_RBT1_PrelMarposs</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB502:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_18</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1762:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_Free1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2095.6|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1930:25|DL=27|Typ=9">PLC_11L6_DB118_String_Prel_Marposs</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2396|Typ=7">PLC_11L6_DB118_Real_Depo_MU_Free1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2236|Typ=7">PLC_11L6_DB118_Real_DepoLava_3</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1034:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_5</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2095.3|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lappatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2120|Typ=7">PLC_11L6_DB118_Real_PrelLava_6</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB222:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_8</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2098.3|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_22</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2364|Typ=7">PLC_11L6_DB118_Real_Depo_Sarico</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2097.0|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_11</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2095.5|Typ=0">PLC_11L6_DB118_Presenza_Pz_MU_Free1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB530:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_19</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2360|Typ=7">PLC_11L6_DB118_Real_Prel_Carico</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1790:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_Free2</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2095.7|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_2</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW4|Typ=3">PLC_11L6_DB116_Par_RBT1_PrelGrezzi</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="11" StructType="RicettaParametri" AreaType="1" Address="0" Bit="31" Shared="0" Retentive="0">RicettaAttivaTemp</Name>
+<EnableTrace DurationDays="65535">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2240|Typ=7">PLC_11L6_DB118_Real_DepoLava_4</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1062:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_6</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2124|Typ=7">PLC_11L6_DB118_Real_PrelLava_7</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB250:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_9</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2098.4|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_23</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2097.1|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_12</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2348|Typ=7">PLC_11L6_DB118_Real_DepoLava_Free</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Stato Manuale Selezionato" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX1.4|Typ=0">PLC_11L6_DB90_StatoManuale</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2096.0|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_3</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBB306:25|DL=27|Typ=9">PLC_11L6_DB90_String_Ora_OUT</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2244|Typ=7">PLC_11L6_DB118_Real_DepoLava_5</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1090:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_7</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2220|Typ=7">PLC_11L6_DB118_Real_PrelLava_Free1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2128|Typ=7">PLC_11L6_DB118_Real_PrelLava_8</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2344|Typ=7">PLC_11L6_DB118_Real_DepoLava_30</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2098.5|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_24</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="TX_Prog Attiva Ricetta" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX1.6|Typ=0">PLC_11L6_DB90_TX_Prog</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2097.2|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_13</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2376|Typ=7">PLC_11L6_DB118_Real_Prel_Marposs</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW10|Typ=3">PLC_11L6_DB116_Par_RBT1_DepoTornio</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2096.1|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_4</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="5" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBD72|Typ=5">PLC_11L6_DB116_Tot_ElementiFiniti</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2248|Typ=7">PLC_11L6_DB118_Real_DepoLava_6</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1118:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_8</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2224|Typ=7">PLC_11L6_DB118_Real_PrelLava_Free2</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2132|Typ=7">PLC_11L6_DB118_Real_PrelLava_9</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2098.6|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_25</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2304|Typ=7">PLC_11L6_DB118_Real_DepoLava_20</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2097.3|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_14</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2216|Typ=7">PLC_11L6_DB118_Real_PrelLava_30</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW18|Typ=3">PLC_11L6_DB116_Par_RBT1_DepoLappatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBB278:25|DL=27|Typ=9">PLC_11L6_DB90_String_Ora_IN</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1818:25|DL=27|Typ=9">PLC_11L6_DB118_String_Prel_Carico</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2096.2|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_5</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2252|Typ=7">PLC_11L6_DB118_Real_DepoLava_7</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Touch Up Selector Abilitazione presa Punti" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX36.0|Typ=0">PLC_11L6_DB90_TouchUpSelector</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1146:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_9</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2095.2|Typ=0">PLC_11L6_DB118_Presenza_Pz_Marposs</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB2042:25|DL=27|Typ=9">PLC_11L6_DB118_String_Prel_MU_Free</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2098.7|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_26</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Ok a Ricevere nuova Ricetta da HMI" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX1.7|Typ=0">PLC_11L6_DB90_Ok_Rx_New_Ricetta</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2308|Typ=7">PLC_11L6_DB118_Real_DepoLava_21</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2097.4|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_15</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2264|Typ=7">PLC_11L6_DB118_Real_DepoLava_10</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2176|Typ=7">PLC_11L6_DB118_Real_PrelLava_20</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2096.3|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_6</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2256|Typ=7">PLC_11L6_DB118_Real_DepoLava_8</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1734:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_30</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2099.0|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_27</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2312|Typ=7">PLC_11L6_DB118_Real_DepoLava_22</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBD332|Typ=7">PLC_11L6_DB90_Real_Ora_IN</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Jog - Negativo " Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX0.4|Typ=0">PLC_11L6_DB90_JogNegativoTavola</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2097.5|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_16</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2268|Typ=7">PLC_11L6_DB118_Real_DepoLava_11</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2180|Typ=7">PLC_11L6_DB118_Real_PrelLava_21</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Nessuno Stato Selezionato" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX1.2|Typ=0">PLC_11L6_DB90_NessunoStato</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2136|Typ=7">PLC_11L6_DB118_Real_PrelLava_10</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2096.4|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_7</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW22|Typ=3">PLC_11L6_DB116_Par_RBT1_DepoLavatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="5" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBD84|Typ=5">PLC_11L6_DB116_Tot_ElementiLappatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2260|Typ=7">PLC_11L6_DB118_Real_DepoLava_9</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2099.1|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_28</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1454:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_20</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2316|Typ=7">PLC_11L6_DB118_Real_DepoLava_23</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2097.6|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_17</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB838:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_30</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2272|Typ=7">PLC_11L6_DB118_Real_DepoLava_12</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2352|Typ=7">PLC_11L6_DB118_Real_DepoLava_Free1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2184|Typ=7">PLC_11L6_DB118_Real_PrelLava_22</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Reset Allarmi HMI CMD Manuali Banchetto Sbavatura" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX36.5|Typ=0">PLC_11L6_DB90_Reset_HMI_Alarm_Manuali</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2140|Typ=7">PLC_11L6_DB118_Real_PrelLava_11</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2392|Typ=7">PLC_11L6_DB118_Real_Prel_MU_Free</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Icona Colonna luminosa pagina Main sezione rossa " Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX0.0|Typ=0">PLC_11L6_DB90_ColLumPagMainRosso</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2096.5|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_8</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2095.0|Typ=0">PLC_11L6_DB118_Presenza_Pz_Prel_Depo</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2099.2|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_29</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1482:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_21</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2320|Typ=7">PLC_11L6_DB118_Real_DepoLava_24</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2097.7|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_18</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="5" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBD68|Typ=5">PLC_11L6_DB116_Tot_ElementiPrelevati</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1174:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_10</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Description="Conteggio Secondi Lavoro Ciclo Robot 1 Turno 1" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW208|Typ=3">PLC_11L6_DB116_CounterSecLavoroRbt1_T1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2276|Typ=7">PLC_11L6_DB118_Real_DepoLava_13</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2356|Typ=7">PLC_11L6_DB118_Real_DepoLava_Free2</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB558:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_20</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2188|Typ=7">PLC_11L6_DB118_Real_PrelLava_23</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2144|Typ=7">PLC_11L6_DB118_Real_PrelLava_12</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="11" StructType="_SysVar_" AreaType="1" Address="0" Bit="357" Shared="0" Retentive="0">_SysVar_</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2096.6|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_9</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Icona Colonna luminosa pagina Main sezione verde" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX0.2|Typ=0">PLC_11L6_DB90_ColLumPagMainVerde</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1958:25|DL=27|Typ=9">PLC_11L6_DB118_String_Depo_Marposs</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1510:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_22</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2324|Typ=7">PLC_11L6_DB118_Real_DepoLava_25</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="11" StructType="RicettaCtrlStruct" AreaType="1" Address="0" Bit="25" Shared="0" Retentive="0">RicettaControlVar</Name>
+<EnableTrace DurationDays="65535">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="11" StructType="RicettaParametri" AreaType="1" Address="0" Bit="31" Shared="0" Retentive="0">RicettaAttiva</Name>
+<EnableTrace DurationDays="65535">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2098.0|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_19</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1202:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_11</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2280|Typ=7">PLC_11L6_DB118_Real_DepoLava_14</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB586:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_21</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Description="Conteggio Minuti Lavoro Ciclo Robot 1 Turno 1" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW206|Typ=3">PLC_11L6_DB116_CounterMinLavoroRbt1_T1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2192|Typ=7">PLC_11L6_DB118_Real_PrelLava_24</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2095.4|Typ=0">PLC_11L6_DB118_Presenza_Pz_MU_Free</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="4" AreaType="1" Address="0" Bit="0" Shared="0" Retentive="0">loc_btn_Allarmi_soglia</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB278:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_10</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2148|Typ=7">PLC_11L6_DB118_Real_PrelLava_13</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBD336|Typ=7">PLC_11L6_DB90_Real_Ora_OUT</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1986:25|DL=27|Typ=9">PLC_11L6_DB118_String_Prel_Lappatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1538:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_23</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2328|Typ=7">PLC_11L6_DB118_Real_DepoLava_26</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1230:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_12</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2284|Typ=7">PLC_11L6_DB118_Real_DepoLava_15</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2380|Typ=7">PLC_11L6_DB118_Real_Depo_Marposs</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB614:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_22</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2196|Typ=7">PLC_11L6_DB118_Real_PrelLava_25</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW6|Typ=3">PLC_11L6_DB116_Par_RBT1_DepoFiniti</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB306:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_11</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2152|Typ=7">PLC_11L6_DB118_Real_PrelLava_14</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Jog + Positivo " Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX0.3|Typ=0">PLC_11L6_DB90_JogPositivoTavola</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB2014:25|DL=27|Typ=9">PLC_11L6_DB118_String_Depo_Lappatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB26:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1566:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_24</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2332|Typ=7">PLC_11L6_DB118_Real_DepoLava_27</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1258:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_13</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Icona stato allarme pagina Main da segnalare acusticamente         " Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX0.7|Typ=0">PLC_11L6_DB90_StatoPagMainAllAcusti</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2288|Typ=7">PLC_11L6_DB118_Real_DepoLava_16</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB642:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_23</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2200|Typ=7">PLC_11L6_DB118_Real_PrelLava_26</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB334:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_12</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2156|Typ=7">PLC_11L6_DB118_Real_PrelLava_15</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB54:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_2</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1594:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_25</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2336|Typ=7">PLC_11L6_DB118_Real_DepoLava_28</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="3" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBW20|Typ=3">PLC_11L6_DB116_Par_RBT1_PrelLavatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Icona stato allarme pagina Main generico " Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX0.5|Typ=0">PLC_11L6_DB90_StatoPagMainAll</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB2070:25|DL=27|Typ=9">PLC_11L6_DB118_String_Depo_MU_Free</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1286:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_14</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2292|Typ=7">PLC_11L6_DB118_Real_DepoLava_17</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB670:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_24</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2204|Typ=7">PLC_11L6_DB118_Real_PrelLava_27</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX36.2|Typ=0">PLC_11L6_DB90_Jog_Positivo</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB362:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_13</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2160|Typ=7">PLC_11L6_DB118_Real_PrelLava_16</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="5" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBD80|Typ=5">PLC_11L6_DB116_Tot_ElementiMarposs</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2095.1|Typ=0">PLC_11L6_DB118_Presenza_Pz_Tornio</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Attivazione Nuovo Codice" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX1.5|Typ=0">PLC_11L6_DB90_Code_Prog_New</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2100|Typ=7">PLC_11L6_DB118_Real_PrelLava_1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB82:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_3</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1622:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_26</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2340|Typ=7">PLC_11L6_DB118_Real_DepoLava_29</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Stato si Automatico Selezionato" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX1.3|Typ=0">PLC_11L6_DB90_StatoAutomatico</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1314:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_15</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2296|Typ=7">PLC_11L6_DB118_Real_DepoLava_18</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB698:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_25</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2208|Typ=7">PLC_11L6_DB118_Real_PrelLava_28</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB866:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_Free1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB390:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_14</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2164|Typ=7">PLC_11L6_DB118_Real_PrelLava_17</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="2" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB22|Typ=2">PLC_11L6_DB118_Free_Byte_22</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2372|Typ=7">PLC_11L6_DB118_Real_Depo_Tornio</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="5" AreaType="1" Address="0" Bit="0" Group="PLC_DB116" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB116.DBD76|Typ=5">PLC_11L6_DB116_Tot_ElementiTornio</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="4" AreaType="1" Address="0" Bit="0" Shared="0" Retentive="0">loc_BtnBarMagazzini_SogliaColore</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Icona stato cancelli  " Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX1.0|Typ=0">PLC_11L6_DB90_CancelliAperti</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB922:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_1</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2104|Typ=7">PLC_11L6_DB118_Real_PrelLava_2</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB110:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_4</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1650:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_27</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1342:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_16</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1846:25|DL=27|Typ=9">PLC_11L6_DB118_String_Depo_Scarico</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2300|Typ=7">PLC_11L6_DB118_Real_DepoLava_19</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="StatoWord0_STATUS" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX200.2|Typ=0">PLC_11L6_DB90_ALARM_PRESENT</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB726:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_26</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2212|Typ=7">PLC_11L6_DB118_Real_PrelLava_29</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB894:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_Free2</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2384|Typ=7">PLC_11L6_DB118_Real_Prel_Lappatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB418:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_15</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2168|Typ=7">PLC_11L6_DB118_Real_PrelLava_18</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX36.3|Typ=0">PLC_11L6_DB90_Jog_Negativo</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="2" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB23|Typ=2">PLC_11L6_DB118_Free_Byte_23</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2368|Typ=7">PLC_11L6_DB118_Real_Prel_Tornio</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB950:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_2</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBX2099.3|Typ=0">PLC_11L6_DB118_Presenza_Pz_Lavatrice_30</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2108|Typ=7">PLC_11L6_DB118_Real_PrelLava_3</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB138:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_5</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="11" StructType="UDT 100" AreaType="1" Address="0" Bit="524" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB100.DBD420|Typ=11">PLC_11L6_DB100_ProgInTx</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1678:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_28</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1370:25|DL=27|Typ=9">PLC_11L6_DB118_String_DepoLava_17</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="0" AreaType="1" Address="0" Bit="0" Description="Icona stato emergenze" Group="PLC_DB90" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB90.DBX1.1|Typ=0">PLC_11L6_DB90_EmergenzaPremuta</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB754:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_27</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2388|Typ=7">PLC_11L6_DB118_Real_Depo_Lappatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB446:25|DL=27|Typ=9">PLC_11L6_DB118_String_PrelLava_16</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="7" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBD2172|Typ=7">PLC_11L6_DB118_Real_PrelLava_19</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+<Variable>
+<Name Type="9" AreaType="1" Address="0" Bit="0" Group="PLC_DB118" Shared="0" Retentive="0" DynamicSettings="[DRV]S7 TCP.Sta=PLC_11L6|Addr=DB118.DBB1902:25|DL=27|Typ=9">PLC_11L6_DB118_String_Depo_Tornio</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Variable>
+</VariableList>
+<DriverList>
+<Driver>
+<Name FileName="S7TCP.dll">S7 TCP</Name>
+</Driver>
+</DriverList>
+<RenamedVariables/>
+<StructureList>
+<Structure>
+<Name Description="">TracciabilitaPezzo</Name>
+<MemberList>
+<Member>
+<Name Type="8">DataInserimento</Name>
+</Member>
+<Member>
+<Name Type="8">DataUscita</Name>
+</Member>
+</MemberList>
+</Structure>
+<Structure>
+<Name Description="">RicettaCtrlStruct</Name>
+<MemberList>
+<Member>
+<Name Type="0">Execute</Name>
+</Member>
+<Member>
+<Name Type="0">MoveFirst</Name>
+</Member>
+<Member>
+<Name Type="0">MoveNext</Name>
+</Member>
+<Member>
+<Name Type="0">MoveLast</Name>
+</Member>
+<Member>
+<Name Type="0">MovePrev</Name>
+</Member>
+<Member>
+<Name Type="4">Status</Name>
+</Member>
+<Member>
+<Name Type="0">Activate</Name>
+</Member>
+<Member>
+<Name Type="0">Save</Name>
+</Member>
+<Member>
+<Name Type="0">Delete</Name>
+</Member>
+<Member>
+<Name Type="9">Query</Name>
+</Member>
+<Member>
+<Name Type="9">Filter</Name>
+</Member>
+<Member>
+<Name Type="9">Sort</Name>
+</Member>
+<Member>
+<Name Type="0">Refresh</Name>
+</Member>
+<Member>
+<Name Type="0">Reset</Name>
+</Member>
+<Member>
+<Name Type="9">ListRecipes</Name>
+</Member>
+<Member>
+<Name Type="4">OrdinamentoOptIndex</Name>
+</Member>
+<Member>
+<Name Type="0">Read</Name>
+</Member>
+<Member>
+<Name Type="9">FiltroCodice</Name>
+</Member>
+</MemberList>
+</Structure>
+<Structure>
+<Name Description="">UDT 100</Name>
+<MemberList>
+<Member>
+<Name Type="6">CodiceProgramma</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_0_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_1_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_2_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_3_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_4_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_5_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_6_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_7_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_8_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_9_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_10_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_11_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_12_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_13_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_14_</Name>
+</Member>
+<Member>
+<Name Type="1">NomeProg_15_</Name>
+</Member>
+<Member>
+<Name Type="4">Dati_Pezzo_Interasse_Vie_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Dati_Pezzo_Interasse_Colonne_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Dati_Pezzo_Shift_Prel2Fila</Name>
+</Member>
+<Member>
+<Name Type="7">Dati_Pezzo_Real_1</Name>
+</Member>
+<Member>
+<Name Type="7">Dati_Pezzo_Real_2</Name>
+</Member>
+<Member>
+<Name Type="4">Dati_Pezzo_OffSet_Pick_X</Name>
+</Member>
+<Member>
+<Name Type="4">Dati_Pezzo_OffSet_Pick_Y</Name>
+</Member>
+<Member>
+<Name Type="4">Dati_Pezzo_OffSet_Pick_Z</Name>
+</Member>
+<Member>
+<Name Type="7">Dati_Pezzo_Real_3</Name>
+</Member>
+<Member>
+<Name Type="7">Dati_Pezzo_Real_4</Name>
+</Member>
+<Member>
+<Name Type="7">Dati_Pezzo_Real_5</Name>
+</Member>
+<Member>
+<Name Type="7">Dati_Pezzo_Real_6</Name>
+</Member>
+<Member>
+<Name Type="7">Dati_Pezzo_Nr_Pz_Da_Lavorare</Name>
+</Member>
+<Member>
+<Name Type="2">Dati_Pezzo_Tipo_Pallet</Name>
+</Member>
+<Member>
+<Name Type="2">Dati_Pezzo_Nr_Pezzi_Vie</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_Marposs_Work</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_DCS_Work_Cycle</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_Enable_Lotto</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp42_3</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp42_4</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp42_5</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp42_6</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp42_7</Name>
+</Member>
+<Member>
+<Name Type="4">Dati_Pezzo_Nr_Pz_Controllo_Marposs</Name>
+</Member>
+<Member>
+<Name Type="2">Dati_Pezzo_Peso_Elemento</Name>
+</Member>
+<Member>
+<Name Type="2">Dati_Pezzo_Byte_2</Name>
+</Member>
+<Member>
+<Name Type="2">Dati_Pezzo_Byte_3</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp0</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp1</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp2</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp3</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp4</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp5</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp6</Name>
+</Member>
+<Member>
+<Name Type="0">Dati_Pezzo_BoolDisp7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile2_Interasse_Vie_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile2_Interasse_Colonne_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile2_Shift_Prel2Fila</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile2_Real_1</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile2_Real_2</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile2_OffSet_Pick_X</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile2_OffSet_Pick_Y</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile2_OffSet_Pick_Z</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile2_Real_3</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile2_Real_4</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile2_Real_5</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile2_Real_6</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile2_Nr_Pz_Da_Lavorare</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile2_Tipo_Pallet</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile2_Nr_Pezzi_Vie</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_Marposs_Work</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_DCS_Work_Cycle</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_Enable_Lotto</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp42_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp42_4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp42_5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp42_6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp42_7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile2_Nr_Pz_Controllo_Marposs</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile2_Peso_Elemento</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile2_Byte_2</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile2_Byte_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp0</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp1</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp2</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile2_BoolDisp7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile3_Interasse_Vie_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile3_Interasse_Colonne_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile3_Shift_Prel2Fila</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile3_Real_1</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile3_Real_2</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile3_OffSet_Pick_X</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile3_OffSet_Pick_Y</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile3_OffSet_Pick_Z</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile3_Real_3</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile3_Real_4</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile3_Real_5</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile3_Real_6</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile3_Nr_Pz_Da_Lavorare</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile3_Tipo_Pallet</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile3_Nr_Pezzi_Vie</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_Marposs_Work</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_DCS_Work_Cycle</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_Enable_Lotto</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp42_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp42_4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp42_5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp42_6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp42_7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile3_Nr_Pz_Controllo_Marposs</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile3_Peso_Elemento</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile3_Byte_2</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile3_Byte_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp0</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp1</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp2</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile3_BoolDisp7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile4_Interasse_Vie_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile4_Interasse_Colonne_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile4_Shift_Prel2Fila</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile4_Real_1</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile4_Real_2</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile4_OffSet_Pick_X</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile4_OffSet_Pick_Y</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile4_OffSet_Pick_Z</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile4_Real_3</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile4_Real_4</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile4_Real_5</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile4_Real_6</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile4_Nr_Pz_Da_Lavorare</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile4_Tipo_Pallet</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile4_Nr_Pezzi_Vie</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_Marposs_Work</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_DCS_Work_Cycle</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_Enable_Lotto</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp42_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp42_4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp42_5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp42_6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp42_7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile4_Nr_Pz_Controllo_Marposs</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile4_Peso_Elemento</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile4_Byte_2</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile4_Byte_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp0</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp1</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp2</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile4_BoolDisp7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile5_Interasse_Vie_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile5_Interasse_Colonne_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile5_Shift_Prel2Fila</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile5_Real_1</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile5_Real_2</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile5_OffSet_Pick_X</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile5_OffSet_Pick_Y</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile5_OffSet_Pick_Z</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile5_Real_3</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile5_Real_4</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile5_Real_5</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile5_Real_6</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile5_Nr_Pz_Da_Lavorare</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile5_Tipo_Pallet</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile5_Nr_Pezzi_Vie</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_Marposs_Work</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_DCS_Work_Cycle</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_Enable_Lotto</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp42_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp42_4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp42_5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp42_6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp42_7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile5_Nr_Pz_Controllo_Marposs</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile5_Peso_Elemento</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile5_Byte_2</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile5_Byte_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp0</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp1</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp2</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile5_BoolDisp7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile6_Interasse_Vie_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile6_Interasse_Colonne_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile6_Shift_Prel2Fila</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile6_Real_1</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile6_Real_2</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile6_OffSet_Pick_X</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile6_OffSet_Pick_Y</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile6_OffSet_Pick_Z</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile6_Real_3</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile6_Real_4</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile6_Real_5</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile6_Real_6</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile6_Nr_Pz_Da_Lavorare</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile6_Tipo_Pallet</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile6_Nr_Pezzi_Vie</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_Marposs_Work</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_DCS_Work_Cycle</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_Enable_Lotto</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp42_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp42_4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp42_5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp42_6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp42_7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile6_Nr_Pz_Controllo_Marposs</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile6_Peso_Elemento</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile6_Byte_2</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile6_Byte_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp0</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp1</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp2</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile6_BoolDisp7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile7_Interasse_Vie_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile7_Interasse_Colonne_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile7_Shift_Prel2Fila</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile7_Real_1</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile7_Real_2</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile7_OffSet_Pick_X</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile7_OffSet_Pick_Y</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile7_OffSet_Pick_Z</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile7_Real_3</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile7_Real_4</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile7_Real_5</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile7_Real_6</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile7_Nr_Pz_Da_Lavorare</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile7_Tipo_Pallet</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile7_Nr_Pezzi_Vie</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_Marposs_Work</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_DCS_Work_Cycle</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_Enable_Lotto</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp42_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp42_4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp42_5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp42_6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp42_7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile7_Nr_Pz_Controllo_Marposs</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile7_Peso_Elemento</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile7_Byte_2</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile7_Byte_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp0</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp1</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp2</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile7_BoolDisp7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile8_Interasse_Vie_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile8_Interasse_Colonne_PLT</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile8_Shift_Prel2Fila</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile8_Real_1</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile8_Real_2</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile8_OffSet_Pick_X</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile8_OffSet_Pick_Y</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile8_OffSet_Pick_Z</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile8_Real_3</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile8_Real_4</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile8_Real_5</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile8_Real_6</Name>
+</Member>
+<Member>
+<Name Type="7">Utensile8_Nr_Pz_Da_Lavorare</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile8_Tipo_Pallet</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile8_Nr_Pezzi_Vie</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_Marposs_Work</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_DCS_Work_Cycle</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_Enable_Lotto</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp42_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp42_4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp42_5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp42_6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp42_7</Name>
+</Member>
+<Member>
+<Name Type="4">Utensile8_Nr_Pz_Controllo_Marposs</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile8_Peso_Elemento</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile8_Byte_2</Name>
+</Member>
+<Member>
+<Name Type="2">Utensile8_Byte_3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp0</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp1</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp2</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp3</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp4</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp5</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp6</Name>
+</Member>
+<Member>
+<Name Type="0">Utensile8_BoolDisp7</Name>
+</Member>
+</MemberList>
+</Structure>
+<Structure>
+<Name Description="">_SysVar_</Name>
+<MemberList>
+<Member>
+<Name Type="8">SimSinDouble</Name>
+</Member>
+<Member>
+<Name Type="1">SimSinInt</Name>
+</Member>
+<Member>
+<Name Type="8">SimCosDouble</Name>
+</Member>
+<Member>
+<Name Type="1">SimCosInt</Name>
+</Member>
+<Member>
+<Name Type="8">SimRampDouble</Name>
+</Member>
+<Member>
+<Name Type="3">SimRampInt</Name>
+</Member>
+<Member>
+<Name Type="8">SimRandDouble</Name>
+</Member>
+<Member>
+<Name Type="3">SimRandInt</Name>
+</Member>
+<Member>
+<Name Type="9">SimRandString</Name>
+</Member>
+<Member>
+<Name Type="2">ActTimeSec</Name>
+</Member>
+<Member>
+<Name Type="2">ActTimeMin</Name>
+</Member>
+<Member>
+<Name Type="2">ActTimeHour</Name>
+</Member>
+<Member>
+<Name Type="2">ActTimeDay</Name>
+</Member>
+<Member>
+<Name Type="2">ActTimeMonth</Name>
+</Member>
+<Member>
+<Name Type="4">ActTimeYear</Name>
+</Member>
+<Member>
+<Name Type="9">ActTimeString</Name>
+</Member>
+<Member>
+<Name Type="9">ActDateString</Name>
+</Member>
+<Member>
+<Name Type="4">StrobeYearLocalTime</Name>
+</Member>
+<Member>
+<Name Type="2">StrobeMonthLocalTime</Name>
+</Member>
+<Member>
+<Name Type="2">StrobeDayLocalTime</Name>
+</Member>
+<Member>
+<Name Type="2">StrobeHourLocalTime</Name>
+</Member>
+<Member>
+<Name Type="2">StrobeMinuteLocalTime</Name>
+</Member>
+<Member>
+<Name Type="2">StrobeSecondLocalTime</Name>
+</Member>
+<Member>
+<Name Type="0">StrobeLocalTime</Name>
+</Member>
+<Member>
+<Name Type="0">StrobeExitApp</Name>
+</Member>
+<Member>
+<Name Type="0">CommDriverStatus</Name>
+</Member>
+<Member>
+<Name Type="4">ActiveScreen</Name>
+</Member>
+<Member>
+<Name Type="0">ControlKeyDown</Name>
+</Member>
+<Member>
+<Name Type="0">AltKeyDown</Name>
+</Member>
+<Member>
+<Name Type="0">ShiftKeyDown</Name>
+</Member>
+<Member>
+<Name Type="4">LastKeyPressed</Name>
+</Member>
+<Member>
+<Name Type="2">ToggleBits</Name>
+</Member>
+<Member>
+<Name Type="4">NumberNotAckAlarms</Name>
+</Member>
+<Member>
+<Name Type="4">AlarmsActive</Name>
+</Member>
+<Member>
+<Name Type="0">AlarmsSoundState</Name>
+</Member>
+<Member>
+<Name Type="9">LastAlarmText</Name>
+</Member>
+<Member>
+<Name Type="0">MouseMove</Name>
+</Member>
+<Member>
+<Name Type="0">OutputAckAlarms</Name>
+</Member>
+<Member>
+<Name Type="0">OutputResetAlarms</Name>
+</Member>
+<Member>
+<Name Type="0">InputAckAlarms</Name>
+</Member>
+<Member>
+<Name Type="0">InputResetAlarms</Name>
+</Member>
+<Member>
+<Name Type="9">ActiveUserName</Name>
+</Member>
+<Member>
+<Name Type="3">ActivePassLevel</Name>
+</Member>
+<Member>
+<Name Type="5">ActiveMaskLevel</Name>
+</Member>
+<Member>
+<Name Type="4">DispatchingQueueCount</Name>
+</Member>
+<Member>
+<Name Type="0">StrobeEmptyDispatcher</Name>
+</Member>
+<Member>
+<Name Type="0">StrobeLoadScreen</Name>
+</Member>
+<Member>
+<Name Type="4">ScreenToLoad</Name>
+</Member>
+<Member>
+<Name Type="9">HostType</Name>
+</Member>
+<Member>
+<Name Type="9">HostIP</Name>
+</Member>
+<Member>
+<Name Type="4">PlatformVerMajor</Name>
+</Member>
+<Member>
+<Name Type="4">PlatformVerMinor</Name>
+</Member>
+<Member>
+<Name Type="4">PlatformVerBuild</Name>
+</Member>
+<Member>
+<Name Type="9">PlatformType</Name>
+</Member>
+<Member>
+<Name Type="9">StartupTime</Name>
+</Member>
+<Member>
+<Name Type="9">CPUNameString</Name>
+</Member>
+<Member>
+<Name Type="9">CPUVendorIdentifier</Name>
+</Member>
+<Member>
+<Name Type="9">CPUIdentifier</Name>
+</Member>
+<Member>
+<Name Type="9">CPUSpeed</Name>
+</Member>
+<Member>
+<Name Type="4">CPUProcessorType</Name>
+</Member>
+<Member>
+<Name Type="9">WinMajor</Name>
+</Member>
+<Member>
+<Name Type="9">WinMinor</Name>
+</Member>
+<Member>
+<Name Type="9">BuildNumber</Name>
+</Member>
+<Member>
+<Name Type="9">ServicePack</Name>
+</Member>
+<Member>
+<Name Type="9">OSType</Name>
+</Member>
+<Member>
+<Name Type="9">TimeZoneBias</Name>
+</Member>
+<Member>
+<Name Type="9">IntColumnSep</Name>
+</Member>
+<Member>
+<Name Type="9">IntTimeSep</Name>
+</Member>
+<Member>
+<Name Type="9">IntDateSep</Name>
+</Member>
+<Member>
+<Name Type="9">ShortDateFmt</Name>
+</Member>
+<Member>
+<Name Type="9">TimeFmt</Name>
+</Member>
+<Member>
+<Name Type="9">WorkingDir</Name>
+</Member>
+<Member>
+<Name Type="9">LoginUserName</Name>
+</Member>
+<Member>
+<Name Type="9">IsUserAdmin</Name>
+</Member>
+<Member>
+<Name Type="4">MemoryLoad</Name>
+</Member>
+<Member>
+<Name Type="8">MemoryTotalPhys</Name>
+</Member>
+<Member>
+<Name Type="8">MemoryAvailPhys</Name>
+</Member>
+<Member>
+<Name Type="8">MemoryTotalPageFile</Name>
+</Member>
+<Member>
+<Name Type="8">MemoryAvailPageFile</Name>
+</Member>
+<Member>
+<Name Type="8">MemoryTotalVirtual</Name>
+</Member>
+<Member>
+<Name Type="8">MemoryAvailVirtual</Name>
+</Member>
+<Member>
+<Name Type="6">IMDBLocalMemoryUsed</Name>
+</Member>
+<Member>
+<Name Type="6">IMDBSharedMemoryUsed</Name>
+</Member>
+<Member>
+<Name Type="6">IMDBLocalMemoryReserved</Name>
+</Member>
+<Member>
+<Name Type="6">IMDBSharedMemoryReserved</Name>
+</Member>
+<Member>
+<Name Type="8">FreeSpaceAlarmPath</Name>
+</Member>
+<Member>
+<Name Type="8">FreeSpaceResourcePath</Name>
+</Member>
+<Member>
+<Name Type="8">FreeSpaceImagePath</Name>
+</Member>
+<Member>
+<Name Type="8">FreeSpaceLogPath</Name>
+</Member>
+<Member>
+<Name Type="8">FreeSpaceDLRPath</Name>
+</Member>
+<Member>
+<Name Type="8">FreeSpaceNetworkUserPath</Name>
+</Member>
+<Member>
+<Name Type="8">FreeSpaceDataUserPath</Name>
+</Member>
+<Member>
+<Name Type="4">ILLogicCycleTime</Name>
+</Member>
+<Member>
+<Name Type="0">ProjectRunning</Name>
+</Member>
+<Member>
+<Name Type="0">ProjectRunningInDemo</Name>
+</Member>
+<Member>
+<Name Type="9">LicenseCode</Name>
+</Member>
+<Member>
+<Name Type="4">NumTCPClient</Name>
+</Member>
+<Member>
+<Name Type="4">NumTCPOutgoingMessages</Name>
+</Member>
+<Member>
+<Name Type="4">NumUDPClient</Name>
+</Member>
+<Member>
+<Name Type="4">NumUDPOutgoingMessages</Name>
+</Member>
+<Member>
+<Name Type="4">NumHTTPClient</Name>
+</Member>
+<Member>
+<Name Type="4">NumHTTPOutgoingMessages</Name>
+</Member>
+<Member>
+<Name Type="4">NumLocalClient</Name>
+</Member>
+<Member>
+<Name Type="4">NumLocalOutgoingMessages</Name>
+</Member>
+<Member>
+<Name Type="4">NumWebClientConnected</Name>
+</Member>
+<Member>
+<Name Type="4">PeekInUseByte</Name>
+</Member>
+<Member>
+<Name Type="4">TotalInUseByte</Name>
+</Member>
+<Member>
+<Name Type="4">PendingLogEntries</Name>
+</Member>
+<Member>
+<Name Type="4">PendingTraceEntries</Name>
+</Member>
+<Member>
+<Name Type="4">PendingDLREntries</Name>
+</Member>
+<Member>
+<Name Type="4">OPCServerNumClients</Name>
+</Member>
+<Member>
+<Name Type="4">NumInUseVar</Name>
+</Member>
+<Member>
+<Name Type="4">NumDynVar</Name>
+</Member>
+<Member>
+<Name Type="4">NumExpressions</Name>
+</Member>
+<Member>
+<Name Type="4">NumActiveUsers</Name>
+</Member>
+<Member>
+<Name Type="4">NumActiveAlarms</Name>
+</Member>
+<Member>
+<Name Type="4">NumActiveAlarmsON</Name>
+</Member>
+<Member>
+<Name Type="4">NumActiveAlarmsOFF</Name>
+</Member>
+<Member>
+<Name Type="4">NumActiveSubscribedAlarms</Name>
+</Member>
+<Member>
+<Name Type="4">NumLoadedScriptRes</Name>
+</Member>
+<Member>
+<Name Type="4">NumLoadedScreenRes</Name>
+</Member>
+<Member>
+<Name Type="4">NumLoadedAcceleratorRes</Name>
+</Member>
+<Member>
+<Name Type="4">NumLoadedMenuRes</Name>
+</Member>
+<Member>
+<Name Type="9">SRActiveShortcut</Name>
+</Member>
+<Member>
+<Name Type="0">SRListening</Name>
+</Member>
+<Member>
+<Name Type="9">SRLastUnderstood</Name>
+</Member>
+<Member>
+<Name Type="0">SRIsActive</Name>
+</Member>
+<Member>
+<Name Type="4">DisplayWidth</Name>
+</Member>
+<Member>
+<Name Type="4">DisplayHeight</Name>
+</Member>
+<Member>
+<Name Type="9">SMSPhoneNumber</Name>
+</Member>
+<Member>
+<Name Type="9">SMSMsgText</Name>
+</Member>
+<Member>
+<Name Type="9">SMSTimeStamp</Name>
+</Member>
+<Member>
+<Name Type="4">RemoteAccessServiceConnected</Name>
+</Member>
+<Member>
+<Name Type="4">RemoteAccessSessionCount</Name>
+</Member>
+<Member>
+<Name Type="4">AlarmsStatus</Name>
+</Member>
+<Member>
+<Name Type="4">AuditTrailExportStatus</Name>
+</Member>
+<Member>
+<Name Type="4">CopyFilesStatus</Name>
+</Member>
+<Member>
+<Name Type="4">CopyFilesErrorCode</Name>
+</Member>
+</MemberList>
+</Structure>
+<Structure>
+<Name Description="parametri ricetta">RicettaParametri</Name>
+<MemberList>
+<Member>
+<Name Type="9">Codice</Name>
+</Member>
+<Member>
+<Name Type="6">CodiceProgramma</Name>
+</Member>
+<Member>
+<Name Type="2">NumPezziVie</Name>
+</Member>
+<Member>
+<Name Type="2">TipoPallet</Name>
+</Member>
+<Member>
+<Name Type="4">PesoPezzo</Name>
+</Member>
+<Member>
+<Name Type="4">InterasseViePLT</Name>
+</Member>
+<Member>
+<Name Type="4">InterasseColonnePLT</Name>
+</Member>
+<Member>
+<Name Type="4">ShiftPrelievoFila2</Name>
+</Member>
+<Member>
+<Name Type="4">OffsetPickX</Name>
+</Member>
+<Member>
+<Name Type="4">OffsetPickY</Name>
+</Member>
+<Member>
+<Name Type="4">OffsetPickZ</Name>
+</Member>
+<Member>
+<Name Type="6">NumElementiDaLavorare</Name>
+</Member>
+<Member>
+<Name Type="0">AbilitaMarposs</Name>
+</Member>
+<Member>
+<Name Type="0">AbilitaSPC</Name>
+</Member>
+<Member>
+<Name Type="0">AbilitaLotto</Name>
+</Member>
+<Member>
+<Name Type="4">NumPezziControlloMarposs</Name>
+</Member>
+</MemberList>
+</Structure>
+</StructureList>
+</RealTimeDB>

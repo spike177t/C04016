@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DLAndRecipe>
+<DLRecipeList>
+<DLRecipe>
+<Name Enabled="1" IsRecipe="0" EnableTimeFromTo="0" RecordOnTime="1" RecordOnVariable="0" RecordOnChange="0" RecordOnQualityGood="0" EnableDeadBand="0" DeadBandPercent="1" DeadBand="30" TimeRecHour="0" TimeRecMin="1" TimeRecSec="0" TimeRecMsec="0" EnableTimeFrom="2017-04-12T14:17:23Z" EnableTimeTo="2017-04-12T14:17:23Z">Log1min</Name>
+<DSN TableName="" RecycleDBConnection="1" MaxError="3" MaxNumberTrans="10" MaxCacheBeforeFlush="32767" User="" VarCharsMax="255" TimeCol="" LocalTimeCol="" MSecCol="" ReasonColName="" UserColName="" DurationDays="180" DurationHours="0" DurationMinutes="0" UseInMemoryDB="1" IMDBSharedTable="1" IMDBSaveColumnName="1" IMDBExportXMLTable="0" IMDBExportCSVTable="0" IMDBCryptFile="0" SecWriteBehindDelay="10" MaxRecordsNumber="10000" cIMDBDelimiter="" cIMDBEndOfLine=""/>
+<Variables Record="" Reset="" Status="" EnableTime=""/>
+</DLRecipe>
+<DLRecipe>
+<Name Enabled="1" IsRecipe="0" EnableTimeFromTo="0" RecordOnTime="0" RecordOnVariable="1" RecordOnChange="0" RecordOnQualityGood="0" EnableDeadBand="0" DeadBandPercent="1" DeadBand="30" TimeRecHour="0" TimeRecMin="0" TimeRecSec="5" TimeRecMsec="0" EnableTimeFrom="2017-04-12T14:36:56Z" EnableTimeTo="2017-04-12T14:36:56Z">LogPezzi</Name>
+<DSN TableName="" RecycleDBConnection="1" MaxError="3" MaxNumberTrans="10" MaxCacheBeforeFlush="32767" User="" VarCharsMax="255" TimeCol="" LocalTimeCol="" MSecCol="" ReasonColName="" UserColName="" DurationDays="180" DurationHours="0" DurationMinutes="0" UseInMemoryDB="1" IMDBSharedTable="1" IMDBSaveColumnName="1" IMDBExportXMLTable="0" IMDBExportCSVTable="0" IMDBCryptFile="0" SecWriteBehindDelay="10" MaxRecordsNumber="10000" cIMDBDelimiter="" cIMDBEndOfLine=""/>
+<Variables Record="" Reset="" Status="" EnableTime=""/>
+<ColumnList>
+<Column>
+<Name Variable="" TempVar="" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">CodicePezzo</Name>
+</Column>
+<Column>
+<Name Variable="" TempVar="" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">Postazione</Name>
+</Column>
+<Column>
+<Name Variable="" TempVar="" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">Prelievo</Name>
+</Column>
+<Column>
+<Name Variable="" TempVar="" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">Deposito</Name>
+</Column>
+<Column>
+<Name Variable="" TempVar="" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">Permanenza</Name>
+</Column>
+</ColumnList>
+</DLRecipe>
+<DLRecipe>
+<Name Enabled="1" IsRecipe="1" AlwaysInUse="1">Ricetta11L6</Name>
+<DSN TableName="RicettaR13" RecycleDBConnection="1" MaxError="3" MaxNumberTrans="10" User="" VarCharsMax="255" TimeCol="" LocalTimeCol="" MSecCol="" UserColName="" UseInMemoryDB="0" IMDBSharedTable="1" IMDBSaveColumnName="1" IMDBExportXMLTable="0" IMDBExportCSVTable="0" IMDBCryptFile="0" SecWriteBehindDelay="10" MaxRecordsNumber="0" cIMDBDelimiter="" cIMDBEndOfLine="">CatR13_c06614_DLR</DSN>
+<Variables Reset="RicettaControlVar:Reset" Status="RicettaControlVar:Status" Execute="RicettaControlVar:Execute" MoveFirst="RicettaControlVar:MoveFirst" MoveLast="RicettaControlVar:MoveLast" MovePrev="RicettaControlVar:MovePrev" MoveNext="RicettaControlVar:MoveNext" Activate="RicettaControlVar:Activate" Insert="RicettaControlVar:Save" Delete="RicettaControlVar:Delete" Requery="RicettaControlVar:Refresh" ListRecipe="RicettaControlVar:ListRecipes" FilterVariable="RicettaControlVar:Filter" SortVariable="RicettaControlVar:Sort" QueryVariable="RicettaControlVar:Query" Read="RicettaControlVar:Read" Filter="" Sort="" Query=""/>
+<ColumnList>
+<Column>
+<Name Variable="RicettaAttiva:Codice" TempVar="RicettaAttivaTemp:Codice" Type="0" RecipeIndex="1" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">Codice</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:ShiftPrelievoFila2" TempVar="RicettaAttivaTemp:ShiftPrelievoFila2" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">ShiftPrelievoFila2</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:NumElementiDaLavorare" TempVar="RicettaAttivaTemp:NumElementiDaLavorare" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">NumElementiDaLavorare</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:CodiceProgramma" TempVar="RicettaAttivaTemp:CodiceProgramma" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">CodiceProgramma</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:TipoPallet" TempVar="RicettaAttivaTemp:TipoPallet" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">TipoPallet</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:NumPezziVie" TempVar="RicettaAttivaTemp:NumPezziVie" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">NumPezziVie</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:OffsetPickX" TempVar="RicettaAttivaTemp:OffsetPickX" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">OffsetPickX</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:InterasseViePLT" TempVar="RicettaAttivaTemp:InterasseViePLT" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">InterasseViePLT</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:PesoPezzo" TempVar="RicettaAttivaTemp:PesoPezzo" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">PesoPezzo</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:InterasseColonnePLT" TempVar="RicettaAttivaTemp:InterasseColonnePLT" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">InterasseColonnePLT</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:OffsetPickY" TempVar="RicettaAttivaTemp:OffsetPickY" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">OffsetPickY</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:OffsetPickZ" TempVar="RicettaAttivaTemp:OffsetPickZ" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">OffsetPickZ</Name>
+</Column>
+<Column>
+<Name Variable="" TempVar="" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">Col00001</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:AbilitaMarposs" TempVar="RicettaAttivaTemp:AbilitaMarposs" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">AbilitaMarposs</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:AbilitaSPC" TempVar="RicettaAttivaTemp:AbilitaSPC" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">AbilitaSPC</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:AbilitaLotto" TempVar="RicettaAttivaTemp:AbilitaLotto" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">AbilitaLotto</Name>
+</Column>
+<Column>
+<Name Variable="RicettaAttiva:NumPezziControlloMarposs" TempVar="RicettaAttivaTemp:NumPezziControlloMarposs" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">NumPezziControlloMarposs</Name>
+</Column>
+</ColumnList>
+</DLRecipe>
+</DLRecipeList>
+</DLAndRecipe>
