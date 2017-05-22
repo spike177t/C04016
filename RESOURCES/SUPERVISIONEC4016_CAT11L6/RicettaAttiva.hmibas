@@ -1,55 +1,52 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <MovResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<ScriptCode StartSel="0" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Option Explicit
-
+<ScriptCode StartSel="0" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">'#Language "WWB-COM"
+Option Explicit
 Sub Main()
-
 	ImpostaParametriRicetta()
-	
 End Sub
 
 Sub ImpostaParametriRicetta()
-		'Copio i parametri temporanei sul PLC
-		'[RicettaPLC:Codice]						= [RicettaAttivaTemp:Codice]
-		'[RicettaPLC:CodiceProgramma] 			= [RicettaAttivaTemp:CodiceProgramma]
-		'[RicettaPLC:AltezzaPezzo] 				= [RicettaAttivaTemp:AltezzaPezzo]
-		'[RicettaPLC:LunghezzaPezzo]				= [RicettaAttivaTemp:LunghezzaPezzo]
-		'[RicettaPLC:NumPiani] 					= [RicettaAttivaTemp:NumPiani]
-		'[RicettaPLC:NumPezziVie] 				= [RicettaAttivaTemp:NumPezziVie]
-		'[RicettaPLC:PezzoDaPrelevare]			= [RicettaAttivaTemp:PezzoDaPrelevare]
-		'[RicettaPLC:TipoPallet] 				= [RicettaAttivaTemp:TipoPallet]
-
 		'Copio i parametri temporanei sul PLC
 		Dim i As Integer
 		Dim tmpChar As String
 		Dim memberName As String
 		Dim bRet As Boolean
 
-		'[PlcR13_DB100_ProgInTx:Codice]						= [RicettaAttivaTemp:Codice]
+		Dim strArr() As Byte
+
+		'[PLC_11L6_DB100_ProgInTx:Codice]						= [RicettaAttivaTemp:Codice]
 		For i = 0 To 15 Step 1
-			'nome variabile struttura che memorizza la ricetta attiva su PLC : PlcR13_DB100_ProgInTx
+			'nome variabile struttura che memorizza la ricetta attiva su PLC : PLC_11L6_DB100_ProgInTx
 			'nome campo carattere: NomeProg_##_
 
 			tmpChar = Mid([RicettaAttivaTemp:Codice],i+1,1)
 			'memberName = "Ch" + Normalizza(i)
 			memberName = "NomeProg_" + CStr(i) +"_"
-			bRet = SetVariableValue("PlcR13_DB100_ProgInTx:"+memberName,Asc(tmpChar))
-			'Debug.Print ("[PlcR13_DB100_ProgInTx:"+memberName+"]")
+			bRet = SetVariableValue("PLC_11L6_DB100_ProgInTx:"+memberName,Asc(tmpChar))
+			'Debug.Print ("[PLC_11L6_DB100_ProgInTx:"+memberName+"]")
 		Next
+		spv_RicettaMemoCodicePezzo											= [RicettaAttivaTemp:Codice] 'memo stringa per rottura coglioni con Marco
+		[PLC_11L6_DB100_ProgInTx:CodiceProgramma] 							= [RicettaAttivaTemp:CodiceProgramma]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Interasse_Vie_PLT] 				= [RicettaAttivaTemp:InterasseViePLT]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Interasse_Colonne_PLT]			= [RicettaAttivaTemp:InterasseColonnePLT]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Nr_Pezzi_Vie]					= [RicettaAttivaTemp:NumPezziVie]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_OffSet_Pick_X] 					= [RicettaAttivaTemp:OffsetPickX]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_OffSet_Pick_Y] 					= [RicettaAttivaTemp:OffsetPickY]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_OffSet_Pick_Z]					= [RicettaAttivaTemp:OffsetPickZ]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Tipo_Pallet] 					= [RicettaAttivaTemp:TipoPallet]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Shift_Prel2Fila] 				= [RicettaAttivaTemp:ShiftPrelievoFila2]
 
-		[PlcR13_DB100_ProgInTx:CodiceProgramma] 						= [RicettaAttivaTemp:CodiceProgramma]
-		[PlcR13_DB100_ProgInTx:Dati_Pezzo_Altezza_Pezzo] 				= [RicettaAttivaTemp:AltezzaPezzo]
-		[PlcR13_DB100_ProgInTx:Dati_Pezzo_Lunghezza_Pezzo]				= [RicettaAttivaTemp:LunghezzaPezzo]
-		[PlcR13_DB100_ProgInTx:Dati_Pezzo_Peso_Elemento]				= [RicettaAttivaTemp:PesoPezzo]
-		[PlcR13_DB100_ProgInTx:Dati_Pezzo_Numero_Piani] 				= [RicettaAttivaTemp:NumPiani]
-		[PlcR13_DB100_ProgInTx:Dati_Pezzo_Nr_Pezzi_Vie] 				= [RicettaAttivaTemp:NumPezziVie]
-		[PlcR13_DB100_ProgInTx:Dati_Pezzo_Pezzo_da_Prelevare]			= [RicettaAttivaTemp:PezzoDaPrelevare]
-		[PlcR13_DB100_ProgInTx:Dati_Pezzo_Tipo_Pallet] 					= [RicettaAttivaTemp:TipoPallet]
-		[PlcR13_DB100_ProgInTx:Dati_Pezzo_Sbavatura_Work] 				= [RicettaAttivaTemp:AbilitaSbavatura]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Peso_Elemento] 					= [RicettaAttivaTemp:PesoPezzo]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Nr_Pz_Controllo_Marposs] 		= [RicettaAttivaTemp:NumPezziControlloMarposs]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Nr_Pz_Da_Lavorare] 				= [RicettaAttivaTemp:NumElementiDaLavorare]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_DCS_Work_Cycle]					= [RicettaAttivaTemp:AbilitaSPC]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Marposs_Work] 					= [RicettaAttivaTemp:AbilitaMarposs]
+		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Enable_Lotto]					= [RicettaAttivaTemp:AbilitaLotto]
 
 
 		'alla fine segnalo che plc deve trasferire nuovi dati ricetta
-		PlcR13_DB90_TX_Prog = True
+		PLC_11L6_DB90_TX_Prog = True
 
 End Sub
 

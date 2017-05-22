@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <MembersListDB>
-<VariableList/>
+<VariableList>
+<Variable>
+<Name>spv_Postazioni</Name>
+<MemberList>
+<Member>
+<Name Type="9" InitialValue="MARPOSS">Marposs</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Member>
+<Member>
+<Name Type="9" InitialValue="TORNIO">Tornio</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Member>
+<Member>
+<Name Type="9" InitialValue="LAVATRICE">Lavatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Member>
+<Member>
+<Name Type="9" InitialValue="LAPPATRICE">Lappatrice</Name>
+<EnableTrace DurationDays="730">0</EnableTrace>
+<EnableNetworkClient>0</EnableNetworkClient>
+<EnableMapRealTimeToDB>0</EnableMapRealTimeToDB>
+</Member>
+</MemberList>
+</Variable>
+</VariableList>
 </MembersListDB>

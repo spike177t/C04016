@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <MovResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<ScriptCode StartSel="12" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Sub Main()
+<ScriptCode StartSel="268" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Sub Main()
 	InitTvMonitor()
 End Sub
 
@@ -17,6 +17,7 @@ Function InitTvMonitor()
 		ExecuteCommand("&lt;CommandType synoptic='TV_Container' action='2' monitor='2' parameter='' Caption='false' Border='false' Resizeable='false' SysMenu='false' MinimizeBox='false' MaximizeBox='false'&gt;Synoptic&lt;/CommandType&gt;")
 	End If
 
+	RunScript("GestioneLogPezzi", 100,False)
 
 End Function
 </ScriptCode>

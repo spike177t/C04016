@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <MovResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<ScriptCode StartSel="1880" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Option Explicit
+<ScriptCode StartSel="3342" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Option Explicit
 
 Dim adesso As Date
 Dim prima As Date
@@ -16,8 +16,8 @@ Dim adesso_fraction As Double
 
 Dim ore, min, sec,secf As Double
 
-
 Sub Main()
+	Dim permanenza As Integer
 
 	adesso 	= Now()
 
@@ -45,7 +45,7 @@ Sub Main()
 	ore 	= Fix(adesso_fraction * 24)
 	min 	= Fix((adesso_fraction - (ore/24)) * 1440)
 	secf 	= Fix((adesso_fraction - (ore/24) - (min/1440)) * 86400)
-	sec   = Round((adesso_fraction - (ore/24) - (min/1440)) * 86400)
+	sec   	= Round((adesso_fraction - (ore/24) - (min/1440)) * 86400)
 
 	Debug.Print ("ore: " &amp; CStr(ore))
 	Debug.Print ("min: " &amp; CStr(min))
@@ -74,7 +74,47 @@ Sub Main()
 
 		'PLC_11L6_DB118_String_Depo_Tornio = sPrima
 
+		'Log TORNIO
+		If [spv_RikLogTornio:RikLog] Then
+			[spv_LogPezzi:CodicePezzo] = spv_RicettaMemoCodicePezzo
+			[spv_LogPezzi:Postazione] = [spv_Postazioni:Tornio]
+			[spv_LogPezzi:DataPrelievo] = PLC_11L6_DB118_String_Prel_Tornio
+			[spv_LogPezzi:DataDeposito] = PLC_11L6_DB118_String_Depo_Tornio
+			permanenza = DateDiff("s", CDate(PLC_11L6_DB118_String_Depo_Tornio), CDate(PLC_11L6_DB118_String_Prel_Tornio))
+			[spv_LogPezzi:Permanenza] = permanenza
+			'registro su DB
+			[spv_LogPezzi:Registra] = True
+			'reset richiesta
+			[spv_RikLogTornio:RikLog]  = False
+		End If
 
+		'Log MARPOSS
+		If [spv_RikLogMarposs:RikLog] Then
+			[spv_LogPezzi:CodicePezzo] = spv_RicettaMemoCodicePezzo
+			[spv_LogPezzi:Postazione] = [spv_Postazioni:Marposs]
+			[spv_LogPezzi:DataPrelievo] = PLC_11L6_DB118_String_Prel_Marposs
+			[spv_LogPezzi:DataDeposito] = PLC_11L6_DB118_String_Depo_Marposs
+			permanenza = DateDiff("s", CDate(PLC_11L6_DB118_String_Depo_Marposs), CDate(PLC_11L6_DB118_String_Prel_Marposs))
+			[spv_LogPezzi:Permanenza] = permanenza
+			'registro su DB
+			[spv_LogPezzi:Registra] = True
+			'reset richiesta
+			[spv_RikLogMarposs:RikLog]  = False
+		End If
+
+		'Log Lappatrice
+		If [spv_RikLogLappatrice:RikLog] Then
+			[spv_LogPezzi:CodicePezzo] = spv_RicettaMemoCodicePezzo
+			[spv_LogPezzi:Postazione] = [spv_Postazioni:Lappatrice]
+			[spv_LogPezzi:DataPrelievo] = PLC_11L6_DB118_String_Prel_Lappatrice
+			[spv_LogPezzi:DataDeposito] = PLC_11L6_DB118_String_Depo_Lappatrice
+			permanenza = DateDiff("s", CDate(PLC_11L6_DB118_String_Depo_Lappatrice), CDate(PLC_11L6_DB118_String_Prel_Lappatrice))
+			[spv_LogPezzi:Permanenza] = permanenza
+			'registro su DB
+			[spv_LogPezzi:Registra] = True
+			'reset richiesta
+			[spv_RikLogLappatrice:RikLog]  = False
+		End If
 
 
 		DoEvents
@@ -84,6 +124,6 @@ Sub Main()
 	
 End Sub
 </ScriptCode>
-<Mode RunAtServer="1" UseUIInterface="0" SeparateThread="0" UseItsTrace="0" ModalDialogs="0"/>
+<Mode RunAtServer="1" UseUIInterface="0" SeparateThread="1" UseItsTrace="1" ModalDialogs="0"/>
 <Execution ThreadPriority="0" StatusVariable="" MaxInstances="1" SleepExecution="0" SyncroScriptTimeout="5000"/>
 </MovResource>

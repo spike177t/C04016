@@ -6,7 +6,7 @@
 <ThresholdList>
 <Threshold>
 <Name Area="" Title="" Help="" DurationFormat="" ReadAccessLevel="4294901760" WriteAccessLevel="4294901760">Digitale</Name>
-<Execution Condition="2" Threshold="1" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0"/>
+<Execution Condition="2" Threshold="1" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0" RunCommandAtServer="0"/>
 <Commands/>
 <CommandsOn/>
 <CommandsAck/>
@@ -24,7 +24,7 @@
 <ThresholdList>
 <Threshold>
 <Name Area="" Title="" Help="" DurationFormat="" ReadAccessLevel="4294901760" WriteAccessLevel="4294901760">Messaggio</Name>
-<Execution Condition="2" Threshold="1" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0"/>
+<Execution Condition="2" Threshold="1" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0" RunCommandAtServer="0"/>
 <Commands/>
 <CommandsOn/>
 <CommandsAck/>
@@ -42,7 +42,7 @@
 <ThresholdList>
 <Threshold>
 <Name Area="" Title="" Help="" DurationFormat="" ReadAccessLevel="4294901760" WriteAccessLevel="4294901760">LowLow</Name>
-<Execution Condition="1" Threshold="-100" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0"/>
+<Execution Condition="1" Threshold="-100" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0" RunCommandAtServer="0"/>
 <Commands/>
 <CommandsOn/>
 <CommandsAck/>
@@ -55,7 +55,7 @@
 </Threshold>
 <Threshold>
 <Name Area="" Title="" Help="" DurationFormat="" ReadAccessLevel="4294901760" WriteAccessLevel="4294901760">Low</Name>
-<Execution Condition="1" Threshold="-90" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0"/>
+<Execution Condition="1" Threshold="-90" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0" RunCommandAtServer="0"/>
 <Commands/>
 <CommandsOn/>
 <CommandsAck/>
@@ -68,7 +68,7 @@
 </Threshold>
 <Threshold>
 <Name Area="" Title="" Help="" DurationFormat="" ReadAccessLevel="4294901760" WriteAccessLevel="4294901760">High</Name>
-<Execution Condition="0" Threshold="90" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0"/>
+<Execution Condition="0" Threshold="90" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0" RunCommandAtServer="0"/>
 <Commands/>
 <CommandsOn/>
 <CommandsAck/>
@@ -81,7 +81,7 @@
 </Threshold>
 <Threshold>
 <Name Area="" Title="" Help="" DurationFormat="" ReadAccessLevel="4294901760" WriteAccessLevel="4294901760">HighHigh</Name>
-<Execution Condition="0" Threshold="100" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0"/>
+<Execution Condition="0" Threshold="100" ThresholdVar="" ThresholdLow="0" ThresholdVarLow="" VariableStatus="" Severity="1" SeverityVar="" SecDelay="0" RunCommandAtServer="0"/>
 <Commands/>
 <CommandsOn/>
 <CommandsAck/>
