@@ -4,12 +4,12 @@
 <DLRecipe>
 <Name Enabled="1" IsRecipe="0" EnableTimeFromTo="0" RecordOnTime="1" RecordOnVariable="0" RecordOnChange="0" RecordOnQualityGood="0" EnableDeadBand="0" DeadBandPercent="1" DeadBand="30" TimeRecHour="0" TimeRecMin="1" TimeRecSec="0" TimeRecMsec="0" EnableTimeFrom="2017-04-12T14:17:23Z" EnableTimeTo="2017-04-12T14:17:23Z">Log1min</Name>
 <DSN TableName="" RecycleDBConnection="1" MaxError="3" MaxNumberTrans="10" MaxCacheBeforeFlush="32767" User="" VarCharsMax="255" TimeCol="" LocalTimeCol="" MSecCol="" ReasonColName="" UserColName="" DurationDays="180" DurationHours="0" DurationMinutes="0" UseInMemoryDB="1" IMDBSharedTable="1" IMDBSaveColumnName="1" IMDBExportXMLTable="0" IMDBExportCSVTable="0" IMDBCryptFile="0" SecWriteBehindDelay="10" MaxRecordsNumber="10000" cIMDBDelimiter="" cIMDBEndOfLine=""/>
-<Variables Record="" Reset="" Status="" EnableTime=""/>
+<Variables Record="" Reset="" Status="" EnableTime="" EnableCloud="0" KeepArchiving="0"/>
 </DLRecipe>
 <DLRecipe>
 <Name Enabled="1" IsRecipe="0" EnableTimeFromTo="0" RecordOnTime="0" RecordOnVariable="1" RecordOnChange="0" RecordOnQualityGood="0" EnableDeadBand="0" DeadBandPercent="1" DeadBand="30" TimeRecHour="0" TimeRecMin="0" TimeRecSec="5" TimeRecMsec="0" EnableTimeFrom="2017-04-12T14:36:56Z" EnableTimeTo="2017-04-12T14:36:56Z">LogPezzi</Name>
 <DSN TableName="" RecycleDBConnection="1" MaxError="3" MaxNumberTrans="10" MaxCacheBeforeFlush="32767" User="supervisione" VarCharsMax="255" TimeCol="" LocalTimeCol="" MSecCol="" ReasonColName="" UserColName="" DurationDays="180" DurationHours="0" DurationMinutes="0" UseInMemoryDB="0" IMDBSharedTable="1" IMDBSaveColumnName="1" IMDBExportXMLTable="0" IMDBExportCSVTable="0" IMDBCryptFile="0" SecWriteBehindDelay="10" MaxRecordsNumber="10000" cIMDBDelimiter="" cIMDBEndOfLine="">Cat11L6_c04016_DLR</DSN>
-<Variables Record="spv_LogPezzi:Registra" Reset="" Status="" EnableTime=""/>
+<Variables Record="spv_LogPezzi:Registra" Reset="" Status="" EnableTime="" EnableCloud="0" KeepArchiving="0"/>
 <ColumnList>
 <Column>
 <Name Variable="spv_LogPezzi:CodicePezzo" TempVar="" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">CodicePezzo</Name>
@@ -26,12 +26,15 @@
 <Column>
 <Name Variable="spv_LogPezzi:Permanenza" TempVar="" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">Permanenza</Name>
 </Column>
+<Column>
+<Name Variable="spv_RicettaMemoDataAttivazione" TempVar="" Type="0" RecipeIndex="0" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">DataAttivazione</Name>
+</Column>
 </ColumnList>
 </DLRecipe>
 <DLRecipe>
 <Name Enabled="1" IsRecipe="1" AlwaysInUse="1">Ricetta11L6</Name>
 <DSN TableName="Ricetta" RecycleDBConnection="1" MaxError="3" MaxNumberTrans="10" User="supervisione" VarCharsMax="255" TimeCol="" LocalTimeCol="" MSecCol="" UserColName="" UseInMemoryDB="0" IMDBSharedTable="1" IMDBSaveColumnName="1" IMDBExportXMLTable="0" IMDBExportCSVTable="0" IMDBCryptFile="0" SecWriteBehindDelay="10" MaxRecordsNumber="0" cIMDBDelimiter="" cIMDBEndOfLine="">Cat11L6_c04016_DLR</DSN>
-<Variables Reset="RicettaControlVar:Reset" Status="RicettaControlVar:Status" Execute="RicettaControlVar:Execute" MoveFirst="RicettaControlVar:MoveFirst" MoveLast="RicettaControlVar:MoveLast" MovePrev="RicettaControlVar:MovePrev" MoveNext="RicettaControlVar:MoveNext" Activate="RicettaControlVar:Activate" Insert="RicettaControlVar:Save" Delete="RicettaControlVar:Delete" Requery="RicettaControlVar:Refresh" ListRecipe="RicettaControlVar:ListRecipes" FilterVariable="RicettaControlVar:Filter" SortVariable="RicettaControlVar:Sort" QueryVariable="RicettaControlVar:Query" Read="RicettaControlVar:Read" Filter="" Sort="" Query=""/>
+<Variables Reset="RicettaControlVar:Reset" Status="RicettaControlVar:Status" Execute="RicettaControlVar:Execute" MoveFirst="RicettaControlVar:MoveFirst" MoveLast="RicettaControlVar:MoveLast" MovePrev="RicettaControlVar:MovePrev" MoveNext="RicettaControlVar:MoveNext" Activate="RicettaControlVar:Activate" Insert="RicettaControlVar:Save" Delete="RicettaControlVar:Delete" Requery="RicettaControlVar:Refresh" ListRecipe="RicettaControlVar:ListRecipes" FilterVariable="RicettaControlVar:Filter" SortVariable="RicettaControlVar:Sort" QueryVariable="RicettaControlVar:Query" Read="RicettaControlVar:Read" Filter="" Sort="" Query="" EnableCloud="0" KeepArchiving="0"/>
 <ColumnList>
 <Column>
 <Name Variable="RicettaAttiva:Codice" TempVar="RicettaAttivaTemp:Codice" Type="0" RecipeIndex="1" AddQualityCol="0" QualityColName="" AddTimeStampCol="0" TimeStampColName="" AddNumUpdatesCol="0" NumUpdatesColName="">Codice</Name>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <StoredPaths>
 <Images value="C:\SupervisioneC4016_Cat11L6\HMI\IMAGES\"/>
-<ExtFileSettings value="C:\SUPERVISIONEC4016_CAT11L6\DATA\"/>
+<ExtFileSettings value="C:\SupervisioneC4016_Cat11L6\DATA\"/>
 <CommandAlarms value="C:\SUPERVISIONEC4016_CAT11L6\ALARM\"/>
 <ThresoldAlarms value="C:\SUPERVISIONEC4016_CAT11L6\ALARM\"/>
 <CommandSystem value="C:\SUPERVISIONEC4016_CAT11L6\DLOGGERS\"/>

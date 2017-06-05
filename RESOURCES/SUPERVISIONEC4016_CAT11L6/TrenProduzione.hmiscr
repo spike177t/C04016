@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<MovResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<General ID="0" SizeX="1024" SizeY="768" MaxClientDocSizeX="0" MaxClientDocSizeY="0" MaxClientPacketSizeX="0" MaxClientPacketSizeY="0" WebClientQuality="100" XBackImage="0" YBackImage="0" CXBackImage="-1" CYBackImage="-1"/>
+<BackGround GradientFill="0" GradientColor="0" BackImageFile="" BkColor="10551200" TileBackground="0"/>
+<Style NonDestroyable="0" GlobalContainerName="0" FitInWindow="1" ShowSynopticBorder="1" StatObjBack="0" EnableScrollBars="1" ShowOnMDITabs="0" SynapsisVisibled="1" UseAntialiasing="1" NumColors="0" UnloadVariables="0"/>
+<Execution LayerVariable="" ExecuteSynapse="0" CyclicSynapseExecution="0" SynopticPublicSource="_SimboliPubblici" SynopticStyleSource="" StyleSourceBackColor="0" SynMaxInst="1" EnableMultiTouch="0" EnableZoom="1" FastTimerFreq="50" SlowTimerFreq="500" MaxCounterFast="50" MaxCounterSlow="10" SeparateThread="0" VisibleObjectsManager="0" WaitExpressionsTime="0" ExclusiveWriteAccess="0" TimeDeferClosingWnd="5000"/>
+<ScriptCode StartSel="4152" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">'#Reference #System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86
+'#Language "WWB.NET"
+
+Option Explicit
+
+Imports System
+Imports System.IO
+Imports System.Collections.Generic
+Imports System.Data.Odbc
+
+Dim objTrend As TrendCmdTarget
+Dim objLabel As DrawCmdTarget
+Dim iCounter As Integer
+Dim nValueX() As Double
+Dim nValueY() As Double
+Dim nXLastPointCurve1 As Integer
+Dim nYLastPointCurve1 As Integer
+Dim NumMaxElements As Integer
+
+Dim strWherePostazione As String
+
+Const PennaX As String = "X"
+Const PennaY As String = "Y"
+
+Dim TornioOld As Integer = 0
+Dim MarpossOld As Integer = 0
+Dim LappatriceOld As Integer = 0
+Dim LavatriceOld As Integer = 0
+Dim CaricoOld As Integer = 0
+Dim ScaricoOld As Integer = 0
+
+Public Sub OnTimer()
+	If spv_TrendPezziFiltro = 0 And [spv_RikLogTornio:NuovoRecord] &lt;&gt; TornioOld Then
+		UpdateTrend()
+		'[spv_RikLogTornio:NuovoRecord] = False
+		TornioOld = [spv_RikLogTornio:NuovoRecord]
+	End If
+	If spv_TrendPezziFiltro = 1 And [spv_RikLogMarposs:NuovoRecord] &lt;&gt; MarpossOld Then
+		UpdateTrend()
+		'[spv_RikLogMarposs:NuovoRecord] = False
+		MarpossOld = [spv_RikLogMarposs:NuovoRecord]
+	End If
+	If spv_TrendPezziFiltro = 2 And [spv_RikLogLappatrice:NuovoRecord] &lt;&gt; LappatriceOld Then
+		UpdateTrend()
+		'[spv_RikLogLappatrice:NuovoRecord] = False
+		LappatriceOld = [spv_RikLogLappatrice:NuovoRecord]
+	End If
+	If spv_TrendPezziFiltro = 3 And [spv_RikLogLavatrice:NuovoRecord] &lt;&gt; LavatriceOld Then
+		UpdateTrend()
+		'[spv_RikLogLavatrice:NuovoRecord] = False
+		LavatriceOld = [spv_RikLogLavatrice:NuovoRecord]
+	End If
+	If spv_TrendPezziFiltro = 4 And [spv_RikLogCarico:NuovoRecord] &lt;&gt; CaricoOld Then
+		UpdateTrend()
+		'[spv_RikLogCarico:NuovoRecord] = False
+		CaricoOld = [spv_RikLogCarico:NuovoRecord]
+	End If
+	If spv_TrendPezziFiltro = 5 And [spv_RikLogScarico:NuovoRecord] &lt;&gt; ScaricoOld Then
+		UpdateTrend()
+		'[spv_RikLogScarico:NuovoRecord] = False
+		ScaricoOld = [spv_RikLogScarico:NuovoRecord]
+	End If
+
+End Sub
+
+Public Sub Click()
+	UpdateTrend()
+End Sub
+
+
+Public Sub UpdateTrend()
+
+	NumMaxElements = 100
+	'Set Trend Object
+	objTrend = GetSubObject("TrendProduzione").GetObjectInterface()
+	objTrend.PenMaxValue(PennaX) =  NumMaxElements
+	objTrend.PenMaxValue(PennaY) =  20
+	objTrend.Samples = NumMaxElements
+
+	'objLabel = GetSubObject("LabelTitolo").GetObjectInterface()
+
+
+	'Set first value to zero to start from the axis origin
+	SetVariableValue("spv_TrendX", 0)
+	SetVariableValue("spv_TrendY", 0)
+
+	nXLastPointCurve1 = 0
+	nYLastPointCurve1 = 0
+
+	'----------------------------
+	'Fill the TrendXY Buffer Data
+	ReDim nValueX(NumMaxElements-1)
+	ReDim nValueY(NumMaxElements-1)
+
+	'decodifico la condizione della select
+	Select Case spv_TrendPezziFiltro
+		Case 0
+			strWherePostazione = "TORNIO"
+			'objLabel.ObjectName = "Trend Tempo Permanenza Tornio"
+		Case 1
+			strWherePostazione = "MARPOSS"
+			'objLabel.ObjectName = "Trend Tempo Permanenza Marposs"
+		Case 2
+			strWherePostazione = "LAPPATRICE"
+			'objTrend.Name = "Trend Tempo Permanenza Lappatrice"
+		Case 3
+			strWherePostazione = "LAVATRICE"
+			'objLabel.ObjectName = "Trend Tempo Permanenza Lavatrice"
+		Case 4
+			strWherePostazione = "CARICO"
+			'objLabel.ObjectName = "Trend Tempo Permanenza Carico"
+		Case 5
+			strWherePostazione = "SCARICO"
+			'objLabel.ObjectName = "Trend Tempo Permanenza Scarico"
+		Case Else
+			strWherePostazione = "%%"
+			'objLabel.ObjectName = "Trend Tempo Permanenza Tutti Pezzi"
+	End Select
+
+
+	UpdateVariables("DSN=Cat11L6_c04016_DLR;Uid=supervisione;Pwd=supervisione;",nValueX,nValueY,NumMaxElements)
+
+
+	'Set Trend Buffer Y Value
+	objTrend.SetSamplesValue(PennaX, 0, CLng(NumMaxElements), nValueX)
+	objTrend.SetSamplesValue(PennaY, 0, CLng(NumMaxElements), nValueY)
+
+
+	'Refresh Trend Area
+	objTrend.Requery
+	objTrend.Refresh
+
+	objTrend = Nothing
+End Sub
+
+Private Sub UpdateVariables( connectionString As String, ByRef xVal() As Double, ByRef yVal() As Double, maxElem As Integer )
+		Dim vResult As Object
+        Dim commandText As String
+        Dim rCount As Integer
+        Dim maxX As Integer
+
+        Dim maxPermanenza, minPermanenza, permanenza As Integer
+
+        If maxElem &lt;= 0 Then
+			maxX = 100
+		Else
+			maxX = maxElem
+		End If
+
+		ReDim xVal(maxX-1)
+		ReDim yVal(maxX-1)
+
+		For rCount = 0 To maxX-1 Step 1
+			xVal(rCount) = rCount
+			yVal(rCount) = 0
+		Next
+
+
+
+		maxPermanenza = 0
+		minPermanenza = 0
+		Try
+            Using connection As New System.Data.Odbc.OdbcConnection(connectionString)
+                connection.Open()
+
+			        commandText = "SELECT TOP 100 " &amp; _
+                            " ROW_NUMBER() OVER(ORDER BY [LocalCol] DESC) As Row# " &amp; _
+                            ",[TimeCol] " &amp; _
+                            ",[MSecCol] " &amp; _
+                            ",[LocalCol] " &amp; _
+                            ",[UserCol] " &amp; _
+                            ",[ReasonCol] " &amp; _
+                            ",[CodicePezzo] " &amp; _
+			        		",[Postazione] " &amp; _
+                            ",[DataPrelievo] " &amp; _
+                            ",[DataDeposito] " &amp; _
+                            ",[Permanenza] " &amp; _
+                      " FROM [supervisionec4016_cat11l6].[dbo].[LogPezzi] " &amp; _
+			          " WHERE [Postazione] like '%" &amp; strWherePostazione &amp; "%' " &amp; _
+                      " order by [LocalCol] desc;"
+			        Debug.Print commandText
+
+                    Using cmd As New System.Data.Odbc.OdbcCommand(commandText, connection)
+
+                        Using reader As System.Data.Odbc.OdbcDataReader = cmd.ExecuteReader()
+
+                            If reader.HasRows Then
+                            	rCount = 0
+                                While reader.Read()
+                                    'xVal(rCount) =  reader(0)
+                                    permanenza =  reader(10)
+                                    xVal(rCount) = rCount
+                                    'yVal(rCount) =  reader(10)
+                                    yVal(rCount) =  permanenza
+                                    rCount = rCount + 1
+									maxPermanenza = IIf(permanenza &gt; maxPermanenza, permanenza, maxPermanenza)
+									minPermanenza = IIf(permanenza &lt; minPermanenza, permanenza, minPermanenza)
+                                End While
+                            End If
+                        End Using
+                    End Using
+
+            End Using
+        Catch e As Exception
+            MsgBox("Impossibile accedere al Database. Verificare che la connessione ODBC sia configurata correttamente. " &amp; _
+                           vbCrLf &amp; "Eccezione: " &amp; e.Message &amp; ".")
+            Exit Sub
+        End Try
+
+End Sub
+
+Public Sub SynopticLoading() Handles .SynopticLoading
+	spv_LogPezziFiltroPostazione = 0
+End Sub
+</ScriptCode>
+<ListSynopticDraw>
+<child>
+<object>group</object>
+<g x="5" y="5" width="1014" height="76" ox="6" oy="0" owidth="1014" oheight="76"/>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<childs>
+<child>
+<type>base</type>
+<type x="0" y="0" width="1014" height="76" rx="16" ry="16" fill="syscolor(WINDOW SysColor)" stroke="syscolor(WINDOWTEXT SysColor)" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rrect</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Name PresSize="0" PresText="0" PresVar="0" StyleSourceBack="1" StyleSourceFont="0" acr="4294901760">Rettangolo Smussato11</Name>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible Var="bFalse">1</Visible>
+<Transparency>0</Transparency>
+<BG>0</BG>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="x">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="863" y="5" width="66" height="66" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands/>
+<CommandsWhileDown/>
+<CommandsOnDown n0="&lt;CommandType synoptic=&quot;popUp_AutoMan&quot; action=&quot;1&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;10&quot; y=&quot;10&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+"/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name PresSize="0" PresText="0" PresVar="0" StyleSourceFont="0" acr="4294901760">btnManuOn</Name>
+<text font-family="Tahoma" font-size="10" text-anchor="middle" font-weight="700" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Manu On</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="PLC_11L6_DB90_StatoManuale">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="33023" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="16711680" Value="10"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="8421376" Value="20"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="32768" Value="80"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="16776960" Value="90"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="65535" Value="100"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>AlarmBanner</type>
+<type x="15" y="5" width="699" height="30" fill="rgb(0,0,0)" stroke="rgb(255,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>4</Border>
+<style Size="0" UseScroll="1" ShowHigherSeverity="0" ShowDateTime="1" HasSpinButton="1" SpinButtonHor="1" FormatDateTime="" Clickable="1" Pos="3" IncludeMilliseconds="0"/>
+<execution BlinkTime="1000" ScrollTime="2000" NetworkServer="" BackupServer="" Refresh="1000"/>
+<Filter Area="ALM*" Alarm="" type="1" severity="0" condition="0"/>
+<ListFont font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="700" op="3" cp="2" qu="1" pf="34" XOffset="0" YOffset="0"/>
+<Name PresSize="0" PresText="0" PresVar="0" StyleSourceFont="0" acr="4294901760">Banner Allarmi12</Name>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<type>AlarmBanner</type>
+<type x="15" y="41" width="699" height="30" fill="rgb(0,0,0)" stroke="rgb(255,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>4</Border>
+<style Size="0" UseScroll="1" ShowHigherSeverity="0" ShowDateTime="1" HasSpinButton="1" SpinButtonHor="1" FormatDateTime="" Clickable="1" Pos="3" IncludeMilliseconds="0"/>
+<execution BlinkTime="1000" ScrollTime="2000" NetworkServer="" BackupServer="" Refresh="1000"/>
+<Filter Area="MSG*" Alarm="" type="1" severity="0" condition="0"/>
+<ListFont font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" XOffset="0" YOffset="0"/>
+<Name PresSize="0" PresText="0" PresVar="0" StyleSourceFont="0" acr="4294901760">Banner Allarmi13</Name>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<type>Button</type>
+<type x="724" y="5" width="65" height="66" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands/>
+<CommandsWhileDown/>
+<CommandsOnDown n0="&lt;CommandType synoptic=&quot;popUp_AutoMan&quot; action=&quot;1&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;10&quot; y=&quot;10&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+"/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name PresSize="0" PresText="0" PresVar="0" StyleSourceFont="0" acr="4294901760">btnAutoOn</Name>
+<text font-family="Tahoma" font-size="10" text-anchor="middle" font-weight="700" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Auto On</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="PLC_11L6_DB90_StatoAutomatico">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="65280" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="16711680" Value="10"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="8421376" Value="20"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="32768" Value="80"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="16776960" Value="90"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="65535" Value="100"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>group</type>
+<g x="939" y="5" width="65" height="66" ox="760" oy="170" owidth="65" oheight="65"/>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<childs>
+<child>
+<type>Button</type>
+<type x="939" y="5" width="65" height="66" fill="rgb(255,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;ConfermaExit&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">Pulsante264</Name>
+<text font-family="Tahoma" font-size="9" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<type>group</type>
+<g x="949" y="12" width="45" height="49" ox="190" oy="449" owidth="44" oheight="45" LibName="Icons" LibDate="2011-02-07T14:15:42Z" LibVers="1056"/>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<childs>
+<child>
+<type>base</type>
+<type x="949" y="15" width="45" height="46" rx="27" ry="36" rxa="30" rya="2" fill="syscolor(WINDOW SysColor)" stroke="syscolor(WINDOWTEXT SysColor)" stroke-width="6" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">arc</type>
+<ExtFill gcolor="rgb(0,0,0)" Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Name acr="4294901760">Arco73</Name>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<type>base</type>
+<type x="968" y="12" width="7" height="29" rx="4" ry="6" fill="rgb(0,0,0)" stroke="syscolor(WINDOWTEXT SysColor)" stroke-width="4" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rrect</type>
+<ExtFill gcolor="rgb(0,0,0)" Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Name acr="4294901760">Rettangolo Smussato81</Name>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+</childs>
+<Name acr="4294901760">Simbolo251</Name>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+</childs>
+<Name PresSize="0" PresText="0" PresVar="0" StyleSourceFont="0" acr="4294901760">Simbolo23</Name>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<type>Button</type>
+<type x="794" y="5" width="65" height="66" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType variable=&quot;PLC_11L6_DB90_Reset_HMI_Alarm_Manuali&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;0&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown n0="&lt;CommandType variable=&quot;PLC_11L6_DB90_Reset_HMI_Alarm_Manuali&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;1&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name PresSize="0" PresText="0" PresVar="0" StyleSourceFont="0" acr="4294901760">btnAutoOn</Name>
+<text font-family="Tahoma" font-size="10" text-anchor="middle" font-weight="700" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Alm.</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="PLC_11L6_DB90_ALARM_PRESENT">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="16711680" Value="10"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="8421376" Value="20"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="32768" Value="80"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="16776960" Value="90"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="65535" Value="100"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+</childs>
+<Name PubName="barraSuperiore" PresText="0" PresVar="0" AntialiasingFont="1" acr="4294901760"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<object>group</object>
+<g id="AndON" x="900" y="126" width="71" height="160" ox="1790" oy="70" owidth="70" oheight="160" LibName="comar" LibDate="2011-06-09T17:09:59Z" LibVers="1084"/>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<childs>
+<child>
+<type>base</type>
+<type x="70" y="120" width="-70" height="-41" fill="rgb(0,0,0)" stroke="rgb(128,128,128)" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill grad="2" gcolor="rgb(0,64,0)" Style="3" fill="rgb(0,0,0)">0</ExtFill>
+<Name acr="4294901760">Rettangolo8</Name>
+<Shadow OY="4">0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<type>base</type>
+<type x="70" y="79" width="-70" height="-39" fill="rgb(0,0,0)" stroke="rgb(127,127,127)" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill grad="2" gcolor="rgb(128,128,0)" Style="3" fill="rgb(0,0,0)">0</ExtFill>
+<Name acr="4294901760">Rettangolo7</Name>
+<Shadow OY="4">0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<type>base</type>
+<type x="70" y="40" width="-70" height="-40" fill="rgb(0,0,0)" stroke="rgb(128,128,128)" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill grad="2" gcolor="rgb(64,0,0)" Style="3" fill="rgb(0,0,0)">0</ExtFill>
+<Name acr="4294901760">Rettangolo6</Name>
+<Shadow OY="4">0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<type>base</type>
+<type x="70" y="160" width="-70" height="-40" fill="rgb(0,0,0)" stroke="rgb(128,128,128)" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill grad="2" gcolor="rgb(0,0,64)" Style="3" fill="rgb(0,0,0)">0</ExtFill>
+<Name acr="4294901760">Rettangolo5</Name>
+<Shadow OY="4">0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<type>base</type>
+<type x="70" y="160" width="-70" height="-40" fill="rgb(0,255,255)" stroke="rgb(255,0,0)" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill grad="2" gcolor="rgb(0,0,255)" Style="3" fill="rgb(0,0,0)">0</ExtFill>
+<Name acr="4294901760">BluOn</Name>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible Var="PLC_11L6_DB1001_A32_03">1</Visible>
+<Transparency>0</Transparency>
+<BG>0</BG>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>base</type>
+<type x="70" y="40" width="-70" height="-40" fill="rgb(255,0,0)" stroke="rgb(255,0,0)" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill grad="2" gcolor="rgb(128,0,0)" Style="3" fill="rgb(0,0,0)">0</ExtFill>
+<Name acr="4294901760">RossoOn</Name>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible Var="PLC_11L6_DB1001_A32_00">1</Visible>
+<Transparency>0</Transparency>
+<BG>0</BG>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>base</type>
+<type x="70" y="79" width="-70" height="-39" fill="rgb(255,255,128)" stroke="rgb(255,0,0)" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill grad="2" gcolor="rgb(237,238,0)" Style="3" fill="rgb(0,0,0)">0</ExtFill>
+<Name acr="4294901760">GialloOn</Name>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible Var="PLC_11L6_DB1001_A32_01">1</Visible>
+<Transparency>0</Transparency>
+<BG>0</BG>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>base</type>
+<type x="70" y="120" width="-70" height="-41" fill="rgb(0,255,0)" stroke="rgb(255,0,0)" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill grad="2" gcolor="rgb(0,128,0)" Style="3" fill="rgb(0,0,0)">0</ExtFill>
+<Name acr="4294901760">VerdeOn</Name>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible Var="PLC_11L6_DB1001_A32_02">1</Visible>
+<Transparency>0</Transparency>
+<BG>0</BG>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+</childs>
+<Name acr="4294901760"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<object>base</object>
+<type x="900" y="89" width="71" height="38" fill="syscolor(WINDOW SysColor)" stroke="syscolor(WINDOWTEXT SysColor)" stroke-width="2" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Name AdaptFont="1" acr="4294901760"/>
+<text font-family="Tahoma" font-size="12" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">AndOn</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<object>Button</object>
+<type x="860" y="425" width="150" height="135" fill="none" stroke="syscolor(BTNTEXT SysColor)" stroke-width="0" stroke-linecap="butt" stroke-linejoin="round">checked</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="spv_TrendPezziFiltro" MechanicStyle="1" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="6" RadioCheckSize="0">1</Mechanic>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name AntialiasingFont="1" acr="4294901760"/>
+<text font-family="Tahoma" font-size="8" text-anchor="start" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">Postazione|Tornio|Marposs|Lappatrice|Lavatrice|Carico|Scarico|</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<object>Trend</object>
+<trend x="0" y="125" width="850" height="545" fill="none" stroke="syscolor(WINDOWTEXT SysColor)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<pens>
+<pen>
+<name var="spv_TrendX" min="0" fmt="x" type="1" sps="1" spl="1" edit="0" is="0" stroke="rgb(255,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round" hatch="hatch(3)" fill="rgb(255,0,0)">X</name>
+<showmin stroke="rgb(255,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">0</showmin>
+<showmax stroke="rgb(255,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">0</showmax>
+<showav stroke="rgb(255,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">0</showav>
+</pen>
+<pen>
+<name var="spv_TrendY" min="0" max="20" fmt="x" type="1" sps="1" spl="1" edit="0" is="0" stroke="rgb(0,0,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round" hatch="hatch(3)" fill="rgb(192,192,192)">Y</name>
+<showmin stroke="rgb(255,224,128)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">0</showmin>
+<showmax stroke="rgb(255,128,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">0</showmax>
+<showav stroke="rgb(128,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">1</showav>
+</pen>
+</pens>
+<borders trendarea="0" penarea="0" timearea="0">4</borders>
+<grid mX="0" mY="0" nxmainp="4" nymainp="4" xcol="12632256" ycol="12632256"/>
+<style sbl="0" title="1" xy="1" ttcol="8388608" ShowZoomBtn="0" ButtonSize="0" ButtonPos="3" PagePrevBtnText="" PrevBtnText="" PauseRunBtnText="" NextBtnText="" PageNextBtnText="" ExpandBtnText="" ZoomBtnText="" MeasureBtnText="" FirstPointBtnText="" LastPointBtnText="" NextPointBtnText="" PrevPointBtnText="" NoneBtnText="" AllBtnText="" SecBtnText="" MinBtnText="" HourBtnText="" DayBtnText="" WeekBtnText="" MonthBtnText="" YearBtnText="" PrintBtnText="">2</style>
+<execution samples="100" spu="100"/>
+<variables/>
+<trendarea fill="rgb(0,0,0)"/>
+<penarea fill="none"/>
+<timearea fill="none"/>
+<legendarea fill="none"/>
+<persistance startnew="0">0</persistance>
+<scalefont font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" XOffset="0" YOffset="0"/>
+<legendfont font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" XOffset="0" YOffset="0"/>
+<timefont font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" XOffset="0" YOffset="0"/>
+<Name AntialiasingFont="1" acr="4294901760">TrendProduzione</Name>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">Trend Produzione</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<object>Button</object>
+<type x="845" y="580" width="150" height="35" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name AntialiasingFont="1" acr="4294901760"/>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">aggiorna dotNet</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<ScriptCode StartSel="0" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">'#Reference #System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86
+'Sostituita la Variabile 'spv_TornioY' con il nuovo nome 'spv_TrendY'
+'Sostituita la Variabile 'spv_TornioX' con il nuovo nome 'spv_TrendX'
+'#Language "WWB.NET"
+
+Option Explicit
+
+Imports System
+Imports System.IO
+Imports System.Collections.Generic
+Imports System.Data.Odbc
+
+Dim objTrend As TrendCmdTarget
+Dim iCounter As Integer
+Dim nValueX() As Double
+Dim nValueY() As Double
+Dim nXLastPointCurve1 As Integer
+Dim nYLastPointCurve1 As Integer
+'Dim nXLastPointCurve2 As Integer
+'Dim nYLastPointCurve2 As Integer
+Dim NumMaxElements As Integer
+
+Public Sub Click()
+
+	NumMaxElements = 100
+
+
+	'Set Trend Object
+	 objTrend = GetSynopticObject().GetSubObject("TrendProduzione").GetObjectInterface()
+	objTrend.PenMaxValue("TornioX") =  NumMaxElements
+	objTrend.PenMaxValue("TornioY") =  20
+	'objTrend.PenMaxValue("VarX1") =  NumMaxElements * NumStepCurve2
+	'objTrend.PenMaxValue("VarY1") =  NumMaxElementsCurve2
+	objTrend.Samples = NumMaxElements
+
+	'Set first value to zero to start from the axis origin
+	SetVariableValue("spv_TrendX", 0)
+	SetVariableValue("spv_TrendY", 0)
+
+	nXLastPointCurve1 = 0
+	nYLastPointCurve1 = 0
+
+	'----------------------------
+	'Fill the TrendXY Buffer Data
+	ReDim nValueX(NumMaxElements-1)
+	ReDim nValueY(NumMaxElements-1)
+
+	UpdateVariables("DSN=Cat11L6_c04016_DLR;Uid=supervisione;Pwd=supervisione;",nValueX,nValueY,NumMaxElements)
+
+
+	'Set Trend Buffer Y Value
+	objTrend.SetSamplesValue("TornioX", 0, CLng(NumMaxElements), nValueX)
+	objTrend.SetSamplesValue("TornioY", 0, CLng(NumMaxElements), nValueY)
+
+
+	'Refresh Trend Area
+	objTrend.Requery
+	objTrend.Refresh
+
+	objTrend = Nothing
+End Sub
+
+Private Sub UpdateVariables( connectionString As String, ByRef xVal() As Double, ByRef yVal() As Double, maxElem As Integer )
+		Dim vResult As Object
+        Dim commandText As String
+        Dim rCount As Integer
+        Dim maxX As Integer
+
+        If maxElem &lt;= 0 Then
+			maxX = 100
+		Else
+			maxX = maxElem
+		End If
+
+		ReDim xVal(maxX-1)
+		ReDim yVal(maxX-1)
+
+		For rCount = 0 To maxX-1 Step 1
+			xVal(rCount) = 0
+			yVal(rCount) = 0
+		Next
+
+
+		Try
+            Using connection As New System.Data.Odbc.OdbcConnection(connectionString)
+                connection.Open()
+
+			        commandText = "SELECT TOP 100 " &amp; _
+                            " ROW_NUMBER() OVER(ORDER BY [LocalCol] DESC) As Row# " &amp; _
+                            ",[TimeCol] " &amp; _
+                            ",[MSecCol] " &amp; _
+                            ",[LocalCol] " &amp; _
+                            ",[UserCol] " &amp; _
+                            ",[ReasonCol] " &amp; _
+                            ",[CodicePezzo] " &amp; _
+			        		",[Postazione] " &amp; _
+                            ",[DataPrelievo] " &amp; _
+                            ",[DataDeposito] " &amp; _
+                            ",[Permanenza] " &amp; _
+                      " FROM [supervisionec4016_cat11l6].[dbo].[LogPezzi] " &amp; _
+                      " order by [LocalCol] desc;"
+			        Debug.Print commandText
+
+                    Using cmd As New System.Data.Odbc.OdbcCommand(commandText, connection)
+
+                        Using reader As System.Data.Odbc.OdbcDataReader = cmd.ExecuteReader()
+
+                            If reader.HasRows Then
+                            	rCount = 0
+                                While reader.Read()
+                                    'xVal(rCount) =  reader(0)
+                                    xVal(rCount) = rCount
+                                    yVal(rCount) =  reader(10)
+                                    rCount = rCount + 1
+                                End While
+                            End If
+                        End Using
+                    End Using
+
+            End Using
+        Catch e As Exception
+            MsgBox("Impossibile accedere al Database. Verificare che la connessione ODBC sia configurata correttamente. " &amp; _
+                           vbCrLf &amp; "Eccezione: " &amp; e.Message &amp; ".")
+            Exit Sub
+        End Try
+
+End Sub
+</ScriptCode>
+</child>
+<child>
+<object>group</object>
+<g x="5" y="725" width="1010" height="40" ox="5" oy="725" owidth="1010" oheight="40"/>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<childs>
+<child>
+<type>Button</type>
+<type x="945" y="0" width="65" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;Uscita&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">PulsanteChiudi</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Chiudi</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="5"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="6"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="7"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="8"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="0" y="0" width="90" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;Main&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+" n1="&lt;CommandType variable=&quot;spv_BtnMainBarSelected&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;0&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">Pulsante19</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Main</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0" Color="255"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="5"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="6"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="95" y="0" width="90" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;Impostazioni&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+" n1="&lt;CommandType variable=&quot;spv_BtnMainBarSelected&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;1&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760" AccessLevel="5">PulsanteSettaggi</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Settaggi</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="5"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="6"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="190" y="0" width="90" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;RicetteModificaCrea&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+" n1="&lt;CommandType variable=&quot;spv_BtnMainBarSelected&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;2&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">PulsanteRicetta</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Ricetta</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="5"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="6"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="285" y="0" width="90" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;Allarmi&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+" n1="&lt;CommandType variable=&quot;spv_BtnMainBarSelected&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;3&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">PulsanteAllarmi</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Allarmi</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="5"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="6"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="380" y="0" width="90" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;StoricoAllarmi&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+" n1="&lt;CommandType variable=&quot;spv_BtnMainBarSelected&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;4&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">PulsanteStoricoAllarmi</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Storico Allarmi</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="5"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="6"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="475" y="0" width="89" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;LogProduzione&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+" n1="&lt;CommandType variable=&quot;spv_BtnMainBarSelected&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;5&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">PulsanteStoricoSistema</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Log Dati</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="5"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="6"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="570" y="0" width="89" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;TrenProduzione&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+" n1="&lt;CommandType variable=&quot;spv_BtnMainBarSelected&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;6&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">PulsanteRpariEmergenze</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Trend Dati</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="5"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="6"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="7"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="850" y="0" width="89" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;RipariEmergenze&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+" n1="&lt;CommandType variable=&quot;spv_BtnMainBarSelected&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;8&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">PulsanteRpariEmergenze</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Mov. Man.</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="7"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="8"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="9"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+<child>
+<type>Button</type>
+<type x="665" y="0" width="89" height="40" fill="rgb(0,0,0)" stroke="rgb(255,255,255)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="1" PushStyleEx="1" PushStyle="1" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands n0="&lt;CommandType synoptic=&quot;DatiLinea&quot; action=&quot;0&quot; monitor=&quot;0&quot; parameter=&quot;&quot; x=&quot;100&quot; y=&quot;100&quot; width=&quot;0&quot; height=&quot;0&quot; Caption=&quot;1&quot; Border=&quot;1&quot; Resizeable=&quot;0&quot; SysMenu=&quot;0&quot; MinimizeBox=&quot;0&quot; MaximizeBox=&quot;0&quot; KeepPrintProportions=&quot;0&quot; PageW=&quot;-1&quot; PageH=&quot;-1&quot; LMargin=&quot;-1&quot; RMargin=&quot;-1&quot; TMargin=&quot;-1&quot; BMargin=&quot;-1&quot;&gt;Synoptic&lt;/CommandType&gt;
+" n1="&lt;CommandType variable=&quot;spv_BtnMainBarSelected&quot; SecondVariable=&quot;&quot; action=&quot;0&quot; strobe=&quot;0&quot; value=&quot;7&quot; max=&quot;100.0&quot; min=&quot;0.0&quot; chars=&quot;0&quot; alias=&quot;&quot; pwd=&quot;0&quot;&gt;Variable&lt;/CommandType&gt;
+"/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name acr="4294901760">PulsanteRpariEmergenze</Name>
+<text font-family="Tahoma" font-size="11" text-anchor="middle" font-weight="400" op="3" cp="2" qu="1" pf="34" f3D="0" XOffset="0" YOffset="0">Dati Linea</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<Visible>0</Visible>
+<Transparency>0</Transparency>
+<BG Var="spv_BtnMainBarSelected">1</BG>
+<BGList>
+<dci>
+<DynColor UseAlpha="0"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="1"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="2"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="3"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="4"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="6"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Color="255" Value="7"/>
+</dci>
+<dci>
+<DynColor UseAlpha="0" Value="8"/>
+</dci>
+</BGList>
+<EG>0</EG>
+<MX>0</MX>
+<MY>0</MY>
+<Scale>0</Scale>
+<Rot>0</Rot>
+<SX>0</SX>
+<SY>0</SY>
+<EX>0</EX>
+<EY>0</EY>
+<FC>0</FC>
+<BList>0</BList>
+<LT Format="">0</LT>
+<RCX>0</RCX>
+<RCY>0</RCY>
+<CM>0</CM>
+</child>
+</childs>
+<Name PubName="barraPlsTxt" PresSize="0" PresText="0" PresVar="0" StyleSourceFont="0" AntialiasingFont="1" acr="4294901760"/>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<object>base</object>
+<type x="185" y="100" width="485" height="25" fill="none" stroke="syscolor(WINDOWTEXT SysColor)" stroke-width="0" stroke-linecap="butt" stroke-linejoin="round" BorderColor="4294967295">rect</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Name AntialiasingFont="1" acr="4294901760">LabelTitolo</Name>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">Testo - Visualizza Valore</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+</child>
+<child>
+<object>Button</object>
+<type x="190" y="85" width="150" height="50" fill="none" stroke="syscolor(BTNTEXT SysColor)" stroke-width="0" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="0" PushStyleEx="0" PushStyle="0" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name AntialiasingFont="1" acr="4294901760"/>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">MarpossDepo</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<ScriptCode StartSel="106" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Public Sub Click()
+	PLC_11L6_DB118_String_Depo_Marposs = CStr(Now())
+	PLC_11L6_DB118_Presenza_Pz_Marposs = True
+End Sub
+</ScriptCode>
+</child>
+<child>
+<object>Button</object>
+<type x="15" y="85" width="150" height="50" fill="none" stroke="syscolor(BTNTEXT SysColor)" stroke-width="0" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="0" PushStyleEx="0" PushStyle="0" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name AntialiasingFont="1" acr="4294901760"/>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">TornioDepo</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<ScriptCode StartSel="104" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Public Sub Click()
+	PLC_11L6_DB118_String_Depo_Tornio = CStr(Now())
+	PLC_11L6_DB118_Presenza_Pz_Tornio = True
+End Sub
+</ScriptCode>
+</child>
+<child>
+<object>Button</object>
+<type x="15" y="135" width="150" height="50" fill="none" stroke="syscolor(BTNTEXT SysColor)" stroke-width="0" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="0" PushStyleEx="0" PushStyle="0" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name AntialiasingFont="1" acr="4294901760"/>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">TornioPrel</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<ScriptCode StartSel="104" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Public Sub Click()
+	PLC_11L6_DB118_String_Prel_Tornio = CStr(Now())
+	PLC_11L6_DB118_Presenza_Pz_Tornio = False
+End Sub
+</ScriptCode>
+</child>
+<child>
+<object>Button</object>
+<type x="190" y="135" width="150" height="50" fill="none" stroke="syscolor(BTNTEXT SysColor)" stroke-width="0" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="0" PushStyleEx="0" PushStyle="0" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name AntialiasingFont="1" acr="4294901760"/>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">MarpossPrel</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<ScriptCode StartSel="106" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Public Sub Click()
+	PLC_11L6_DB118_String_Prel_Marposs = CStr(Now())
+	PLC_11L6_DB118_Presenza_Pz_Marposs = False
+End Sub
+</ScriptCode>
+</child>
+<child>
+<object>Button</object>
+<type x="15" y="195" width="150" height="50" fill="none" stroke="syscolor(BTNTEXT SysColor)" stroke-width="0" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="0" PushStyleEx="0" PushStyle="0" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name AntialiasingFont="1" acr="4294901760"/>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">LappaDepo</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<ScriptCode StartSel="119" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Public Sub Click()
+	PLC_11L6_DB118_String_Depo_Lappatrice = CStr(Now())
+	PLC_11L6_DB118_Presenza_Pz_Lappatrice = True
+End Sub
+</ScriptCode>
+</child>
+<child>
+<object>Button</object>
+<type x="15" y="245" width="150" height="50" fill="none" stroke="syscolor(BTNTEXT SysColor)" stroke-width="0" stroke-linecap="butt" stroke-linejoin="round">normal</type>
+<ExtFill Style="3" fill="syscolor(WINDOW SysColor)">0</ExtFill>
+<Border>0</Border>
+<Mechanic CheckVariable="" MechanicStyle="0" CentralZero="0" PushStyleEx2="0" PushStyleEx="0" PushStyle="0" clickable="1" NumOptBtn="5" RadioCheckSize="0">0</Mechanic>
+<Commands/>
+<CommandsWhileDown/>
+<CommandsOnDown/>
+<KeyCode VirtualKey="0" ShowKeyShortcut="1" EnableShortcut="0">0</KeyCode>
+<Name AntialiasingFont="1" acr="4294901760"/>
+<text font-family="Tahoma" font-size="8" text-anchor="middle" font-weight="400" pf="34" f3D="0" XOffset="0" YOffset="0">LappaPrel</text>
+<Shadow>0</Shadow>
+<Rotation>0</Rotation>
+<ScriptCode StartSel="131" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Public Sub Click()
+	PLC_11L6_DB118_String_Prel_Lappatrice = CStr(Now())
+	PLC_11L6_DB118_Presenza_Pz_Lappatrice = False
+End Sub
+</ScriptCode>
+</child>
+</ListSynopticDraw>
+<VariableList/>
+</MovResource>

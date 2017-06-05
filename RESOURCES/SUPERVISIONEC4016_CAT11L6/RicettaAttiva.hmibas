@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <MovResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<ScriptCode StartSel="0" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">'#Language "WWB-COM"
+<ScriptCode StartSel="1561" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">'#Language "WWB-COM"
 Option Explicit
 Sub Main()
 	ImpostaParametriRicetta()
@@ -43,6 +43,9 @@ Sub ImpostaParametriRicetta()
 		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_DCS_Work_Cycle]					= [RicettaAttivaTemp:AbilitaSPC]
 		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Marposs_Work] 					= [RicettaAttivaTemp:AbilitaMarposs]
 		[PLC_11L6_DB100_ProgInTx:Dati_Pezzo_Enable_Lotto]					= [RicettaAttivaTemp:AbilitaLotto]
+		spv_RicettaMemoDataAttivazione										= Cstr(Now())
+
+
 
 
 		'alla fine segnalo che plc deve trasferire nuovi dati ricetta

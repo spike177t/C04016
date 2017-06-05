@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<MovResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ScriptCode StartSel="1690" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">' Find the project path without '\' or Project Name (Trova il percorso del progetto senza '\' o il Nome del Progetto)
+Public Function MyProjectSetting (sName As String) As String
+	Dim nPos As Integer
+
+	Select Case sName
+		Case "FILEPATH"
+			nPos = InStrRev(GetProjectFileName, "\")
+			If nPos = 0 Then
+				MyProjectSetting = ""
+			Else
+				MyProjectSetting = Left(GetProjectFileName, nPos - 1)
+			End If
+
+		Case "FILENAME"
+			nPos = InStrRev(GetProjectFileName, "\")
+			If nPos = 0 Then
+				MyProjectSetting = ""
+			Else
+				MyProjectSetting = Right(GetProjectFileName, Len(GetProjectFileName) - nPos)
+			End If
+
+		Case Else
+			MyProjectSetting = ""
+
+	End Select
+
+End Function
+
+Function GetStringFromID(sId As String, sDefault As String) As String
+	GetStringFromID = StringFromID(sId)
+	If GetStringFromID = "" Then GetStringFromID = sDefault
+End Function
+
+Function InitTvMonitor()
+	Dim nMonitor As Integer
+	Dim vButton As DrawCmdTarget
+	Dim Screen As SynopticCmdTarget
+
+	nMonitor = GetNumMonitors
+	Debug.Print "Function.bas - monitor: "+Str(nMonitor)
+	If nMonitor &gt; 1 Then
+		'devo verificare che TV_Container non sia già aperto
+		'******************************
+		'fare
+
+
+		'apro sinottico TV nel 2° schermo
+		'OpenSynopticEx(lpszSynopticName, nShow, lpszParameterFile, nMonitor, bNotMDIFrame, bModal)
+		'OpenSynopticEx("TV_Container", 1, "" , 2, True, False)
+		'ExecuteCommand("&lt;CommandType synoptic='TV_Container' action='2' monitor='2' parameter='' x='1280' y='0' width='1000' height='700' Caption='false' Border='false' Resizeable='false' SysMenu='false' MinimizeBox='false' MaximizeBox='false'&gt;Synoptic&lt;/CommandType&gt;")
+		ExecuteCommand("&lt;CommandType synoptic='TV_Container' action='2' monitor='2' parameter='' Caption='false' Border='false' Resizeable='false' SysMenu='false' MinimizeBox='false' MaximizeBox='false'&gt;Synoptic&lt;/CommandType&gt;")
+	End If
+
+
+End Function
+
+Function ResetGeneraleButtons()
+	'Array che contiene l'elenco nomi dei pulsanti
+	Const nButtons = 12
+	Dim buttonArray(nButtons) As String
+	Dim btn As DrawCmdTarget
+	buttonArray(1) = "btnGenerale"
+	buttonArray(2) = "btnRipari"
+	buttonArray(3) = "btnCarico"
+	buttonArray(4) = "btnAustenite"
+	buttonArray(5) = "btnAutoclavi"
+	buttonArray(6) = "btnDistensione"
+	buttonArray(7) = "btnSpinner"
+	buttonArray(8) = "btnRegistri"
+	buttonArray(9) = "btnSoppalco"
+	buttonArray(10) = "btnManutenzione"
+	buttonArray(11) = "btnAllarmi"
+	buttonArray(12) = "btnTv"
+
+	'inizializzo  la variabile per rilevare l'oggetto sinottico
+	'Dim sinottico As SynopticCmdTarget
+	'Set sinottico = GetSynopticObject()
+	Dim MainScreen As SynopticCmdTarget
+	Set MainScreen = GetSynopticInterface("T8_Principale")
+	If MainScreen Is Nothing Then
+		MsgBox("MainScreen is Nothing",vbOkOnly,GetProjectTitle)
+	Else
+		For i = 1 To nButtons 
+			'Debug.Print buttonArray(i)
+			Set btn = MainScreen.GetSubObject(buttonArray(i))
+			btn.BackColor = RGB(0,0,0)
+		Next i
+
+
+		'MsgBox("ci siamo?",vbOkOnly,GetProjectTitle)
+		Set btn = Nothing
+	End If
+	Set MainScreen = Nothing
+
+End Function
+
+
+
+Public Sub Main()
+	
+End Sub
+</ScriptCode>
+<Mode RunAtServer="1" UseUIInterface="0" SeparateThread="1" UseItsTrace="0" ModalDialogs="0"/>
+<Execution ThreadPriority="0" StatusVariable="" MaxInstances="10" SleepExecution="100" SyncroScriptTimeout="5000"/>
+</MovResource>

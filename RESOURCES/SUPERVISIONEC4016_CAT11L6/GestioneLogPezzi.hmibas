@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <MovResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<ScriptCode StartSel="3342" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Option Explicit
+<ScriptCode StartSel="3467" SelLength="0" OutStatusBar="1" OutLog="1" OutPrinter="1">Option Explicit
 
 Dim adesso As Date
 Dim prima As Date
@@ -28,8 +28,8 @@ Sub Main()
 	prima 	= CDate(dPrima)
 	sPrima 	= CStr(prima)
 
-	Debug.Print ("adesso: " &amp; CStr(adesso))
-	Debug.Print ("prima: "  &amp; CStr(prima))
+	'Debug.Print ("adesso: " &amp; CStr(adesso))
+	'Debug.Print ("prima: "  &amp; CStr(prima))
 
 	'The integral part of a Date represents the day. The value zero is equal to #12/30/1899#. This is the Epoch. The value 1 is equal to one day, or 24 hours. A week equals 7 and a year is either 365 or 366. Sample dates: #1/1/1900# = 2, #1/1/2000# = 36526, #1/1/2100# = 73051.
 
@@ -47,10 +47,10 @@ Sub Main()
 	secf 	= Fix((adesso_fraction - (ore/24) - (min/1440)) * 86400)
 	sec   	= Round((adesso_fraction - (ore/24) - (min/1440)) * 86400)
 
-	Debug.Print ("ore: " &amp; CStr(ore))
-	Debug.Print ("min: " &amp; CStr(min))
-	Debug.Print ("secf: " &amp; CStr(secf))
-	Debug.Print ("sec: " &amp; CStr(sec))
+	'Debug.Print ("ore: " &amp; CStr(ore))
+	'Debug.Print ("min: " &amp; CStr(min))
+	'Debug.Print ("secf: " &amp; CStr(secf))
+	'Debug.Print ("sec: " &amp; CStr(sec))
 
 	Do
 
@@ -86,6 +86,9 @@ Sub Main()
 			[spv_LogPezzi:Registra] = True
 			'reset richiesta
 			[spv_RikLogTornio:RikLog]  = False
+			'nuovo record
+			'[spv_RikLogTornio:NuovoRecord]  = True
+			[spv_RikLogTornio:NuovoRecord]  = [spv_RikLogTornio:NuovoRecord] + 1
 		End If
 
 		'Log MARPOSS
@@ -100,6 +103,9 @@ Sub Main()
 			[spv_LogPezzi:Registra] = True
 			'reset richiesta
 			[spv_RikLogMarposs:RikLog]  = False
+			'nuovo record
+			'[spv_RikLogMarposs:NuovoRecord]  = True
+			[spv_RikLogMarposs:NuovoRecord]  = [spv_RikLogMarposs:NuovoRecord] + 1
 		End If
 
 		'Log Lappatrice
@@ -114,6 +120,9 @@ Sub Main()
 			[spv_LogPezzi:Registra] = True
 			'reset richiesta
 			[spv_RikLogLappatrice:RikLog]  = False
+			'nuovo record
+			'[spv_RikLogLappatrice:NuovoRecord]  = True
+			[spv_RikLogLappatrice:NuovoRecord]  = [spv_RikLogLappatrice:NuovoRecord] + 1
 		End If
 
 
